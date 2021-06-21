@@ -2,4 +2,4 @@
 <link href="${css}" rel="stylesheet" />
 `).join('') %> 
 <%= htmlWebpackPlugin.files.js.map((js) => `<script 
-src="${js}"></script>`).join('') %>
+src="${js}" defer></script>`).join('') %>
