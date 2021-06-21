@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+yarn.lock
+favicon.ico
+public
+.husky/
+.webpack/
+.webpack
+# Minified JS Library
+######################
+src/lib
+*.min.js

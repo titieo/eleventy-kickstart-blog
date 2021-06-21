@@ -1,0 +1,103 @@
+{
+    "name": "frontend-boilerplate",
+    "version": "0.1.0",
+    "description": "A template for a vanilla html, css, js project. Using eslint, prettier, stylelint, babel and browsersync.",
+    "author": "cokaps016016",
+    "license": "MIT",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cokaps016/frontend-boilerplate.git"
+    },
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-customizable"
+        },
+        "cz-customizable": {
+            "config": "./node_modules/@picgo/bump-version/.cz-config.js"
+        }
+    },
+    "scripts": {
+        "cz": "git add . && git-cz && git push origin main",
+        "release": "bump-version",
+        "postinstall": "husky install",
+        "lintci-stylelint": "echo Linting With Stylelint... && stylelint src/css/**/*.css && echo Lint passed. || (echo Lint failed, attempting fix... && stylelint src/css/**/*.css --fix && echo Fix generated successfully. || (echo Fix failed! && exit 1))",
+        "lintci-eslint": "echo Linting With Eslint... &&  yarn eslint --format github --ext .js --quiet && echo Lint passed. || (echo Lint failed, attempting fix... && yarn eslint --ext .js --fix --quiet && echo Fix generated successfully. || (echo Fix failed! && exit 1))",
+        "lintci-prettier": "echo Linting With Prettier... && yarn prettier --check . && echo Lint passed. || (echo Lint failed, attempting fix... && yarn prettier -w . && echo Fix generated successfully. || (echo Fix failed! && exit 1))",
+        "lint-stylelint": "echo Linting With Stylelint... && stylelint src/css/**/*.css && echo Lint passed. || (echo Lint failed && exit 1)",
+        "lint-eslint": "echo Linting With Eslint... &&  yarn eslint --ext .js --quiet && echo Lint passed.|| (echo Lint failed && exit 1)",
+        "lint-prettier": "echo Linting With Prettier... && yarn prettier --check . && echo Lint passed. || (echo Lint failed && exit 1)",
+        "fixlint-stylelint": "echo Fixing Lint Issues With Stylelint... && stylelint src/css/**/*.css --fix && echo Fix generated successfully. || (echo Fix failed! && exit 1)",
+        "fixlint-eslint": "echo Fixing Lint Issues With Eslint... && yarn eslint --ext .js --fix --quiet && echo Fix generated successfully. || (echo Fix failed! && exit 1)",
+        "fixlint-prettier": "echo Fixing Lint Issues With Prettier... && yarn prettier -w . && echo Fix generated successfully. || (echo Fix failed! && exit 1)",
+        "lintci": "concurrently \"yarn:lintci-*\" && echo Please apply the following diff using git apply && git diff",
+        "lint": "concurrently \"yarn:lint-*\"",
+        "fixlint": "concurrently \"yarn:fixlint-*\" && echo Please apply the diff",
+        "dev-webpack": "webpack serve --open --config webpack.dev.js",
+        "dev-11ty": "npx @11ty/eleventy --watch",
+        "debug": "run-script-os",
+        "debug:win32": "set DEBUG=Eleventy* & npx @11ty/eleventy",
+        "debug:default": "DEBUG=Eleventy* npx @11ty/eleventy",
+        "build": "webpack --config webpack.prod.js"
+    },
+    "devDependencies": {
+        "@11ty/eleventy": "^0.12.1",
+        "@babel/core": "^7.14.6",
+        "@babel/eslint-plugin": "^7.14.5",
+        "@babel/preset-env": "^7.14.5",
+        "@commitlint/cli": "^12.1.4",
+        "@commitlint/config-conventional": "^12.1.4",
+        "@picgo/bump-version": "^1.1.0",
+        "autoprefixer": "^10.2.6",
+        "babel-loader": "^8.2.2",
+        "concurrently": "^6.2.0",
+        "css-loader": "^5.2.6",
+        "css-minimizer-webpack-plugin": "^3.0.1",
+        "cssnano": "^5.0.6",
+        "eslint": "7.28.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-html": "^6.1.2",
+        "favicons": "^6.2.2",
+        "favicons-webpack-plugin": "^5.0.2",
+        "file-loader": "^6.2.0",
+        "html-webpack-plugin": "^5.3.1",
+        "husky": "^6.0.0",
+        "image-minimizer-webpack-plugin": "^2.2.0",
+        "imagemin-gifsicle": "^7.0.0",
+        "imagemin-jpegtran": "^7.0.0",
+        "imagemin-optipng": "^8.0.0",
+        "imagemin-svgo": "^9.0.0",
+        "mini-css-extract-plugin": "^1.6.0",
+        "npm-run-all": "^4.1.5",
+        "postcss-loader": "^6.1.0",
+        "postcss-preset-env": "^6.7.0",
+        "prettier": "2.3.1",
+        "stylelint": "13.13.1",
+        "stylelint-config-prettier": "^8.0.2",
+        "stylelint-config-standard": "22.0.0",
+        "tailwindcss": "^2.2.2",
+        "webpack": "^5.39.0",
+        "webpack-cli": "^4.7.2",
+        "webpack-dev-server": "^3.11.2",
+        "webpack-merge": "^5.8.0",
+        "yamljs": "^0.3.0"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.3",
+        "alpinejs": "^3.0.9",
+        "daisyui": "^1.4.0",
+        "eleventy-plugin-blog-tools": "^0.3.1",
+        "eleventy-plugin-reader-bar": "^0.2.0",
+        "markdown-it-attrs": "^4.0.0",
+        "markdown-it-emoji": "^2.0.0",
+        "overlayscrollbars": "^1.13.1",
+        "run-script-os": "^1.1.6",
+        "theme-change": "^2.0.2"
+    }
+}

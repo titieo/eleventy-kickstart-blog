@@ -1,0 +1,12 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "git.ignoreLimitWarning": true,
+    "search.exclude": {
+        "**/.yarn": true,
+        "**/.pnp.*": true
+    }
+}

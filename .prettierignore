@@ -1,0 +1,25 @@
+.yarn/
+.husky/
+.DS_Store
+.yarnrc.yml
+!public/favicon.ico
+!public/icon/
+!public/**/*.html
+public/
+.eslintrc.js
+.prettierrc.js
+.stylelintrc.js
+.travis.yml
+.yarnrc.yml
+babel.config.json
+bs-config.js
+*.yml
+*.json
+!main.js
+!preload.js
+.webpack
+.webpack/
+# Minified JS Library
+######################
+src/lib
+*.min.js

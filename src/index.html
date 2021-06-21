@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html id="html" class="custom-scroll">
+    <head lang="en-US">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>cokaps016 | Personal Blog</title>
+        <meta name="author" content="cokaps016016" />
+        <meta name="description" content="cokaps016016 Personal Blog" />
+    </head>
+    <body id="body">
+        <div class="h-screen bg-base-200 drawer text-base-content">
+            <!-- this checkbox controls if drawer is open -->
+            <input id="menu-drawer" type="checkbox" class="drawer-toggle" />
+            <div class="flex flex-col drawer-content">
+                <!-- drawer content -->
+                <div class="w-full navbar bg-base-300">
+                    <!-- hamburger menu is only visible on mobile -->
+                    <div class="flex-none lg:hidden">
+                        <label
+                            for="menu-drawer"
+                            class="btn btn-square btn-ghost"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                class="inline-block w-6 h-6 stroke-current"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"
+                                ></path>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="flex-1 px-2 mx-2 font-bold">
+                        <!-- navbar title -->
+                        <span>cokaps016 | Personal Blog</span>
+                    </div>
+                    <div class="flex-none">
+                        <!-- navbar is only visible for desktop -->
+                        <div class="hidden lg:inline-block">
+                            <ul class="mr-2 space-x-2 menu horizontal">
+                                <li>
+                                    <a
+                                        target="_blank"
+                                        href="https://tailwindcss.com/"
+                                        class="rounded-btn"
+                                        >TailwindCSS</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        target="_blank"
+                                        href="https://daisy.js.org/"
+                                        class="rounded-btn"
+                                        >DaisyUI</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <select
+                            class="select"
+                            onchange="changed()"
+                            data-choose-theme
+                            x-data="{
+                                themes:[
+                                        { id: 'light', name: '🌝  Light' },
+                                        { id: 'dark', name: '🌚  Dark' },
+                                        { id: 'cupcake', name: '🧁  Cupcake' },
+                                        { id: 'bumblebee', name: '🐝  Bumblebee' },
+                                        { id: 'emerald', name: '✳️  Emerald' },
+                                        { id: 'corporate', name: '🏢  Corporate' },
+                                        { id: 'synthwave', name: '🌃  Synthwave' },
+                                        { id: 'retro', name: '👴  Retro' },
+                                        { id: 'cyberpunk', name: '🤖  Cyberpunk' },
+                                        { id: 'valentine', name: '🌸  Valentine' },
+                                        { id: 'halloween', name: '🎃  Halloween' },
+                                        { id: 'garden', name: '🌷  Garden' },
+                                        { id: 'forest', name: '🌲  Forest' },
+                                        { id: 'aqua', name: '🐟  Aqua' },
+                                        { id: 'lofi', name: '👓  Lofi' },
+                                        { id: 'pastel', name: '🖍  Pastel' },
+                                        { id: 'fantasy', name: '🧚‍♀️  Fantasy' },
+                                        { id: 'wireframe', name: '📝  Wireframe' },
+                                        { id: 'black', name: '🏴  Black' },
+                                        { id: 'luxury', name: '💎  Luxury' },
+                                        { id: 'dracula', name: '🧛‍♂️  Dracula' }]
+                                }"
+                        >
+                            <template x-for="theme in themes" :key="theme.id">
+                                <option
+                                    :value="theme.id"
+                                    x-text="theme.name"
+                                ></option>
+                            </template>
+                        </select>
+                    </div>
+                </div>
+                <!-- main content -->
+                <div class="grid flex-grow place-content-center">
+                    <div class="w-full max-w-md p-4 text-center">
+                        <!-- avatar -->
+                        <div class="mx-auto avatar">
+                            <div
+                                class="
+                                    w-32
+                                    h-32
+                                    p-1
+                                    mb-8
+                                    mask mask-squircle
+                                    bg-secondary
+                                "
+                            >
+                                <img
+                                    src="https://i.pravatar.cc/128?img=54"
+                                    class="mask mask-squircle"
+                                />
+                            </div>
+                        </div>
+                        <!-- text -->
+                        <div class="pb-3">
+                            <h1 class="py-2 text-2xl font-bold">
+                                TailwindCSS + DaisyUI
+                            </h1>
+                            <p
+                                class="
+                                    text-sm text-opacity-70 text-base-content
+                                "
+                            >
+                                Generates CSS using using TailwindCSS JIT and
+                                makes it production-ready using autoprefixer and
+                                cssnano.
+                            </p>
+                        </div>
+                        <a
+                            target="_blank"
+                            class="btn btn-primary"
+                            href="https://daisy.js.org/"
+                            >See all components</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <!-- drawer sidebar for mobile -->
+            <div class="drawer-side">
+                <label for="menu-drawer" class="drawer-overlay"></label>
+                <ul class="p-4 overflow-y-auto menu w-80 bg-base-100">
+                    <li>
+                        <a target="_blank" href="https://tailwindcss.com/"
+                            >TailwindCSS</a
+                        >
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://daisy.js.org/"
+                            >DaisyUI</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
