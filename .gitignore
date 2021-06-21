@@ -96,6 +96,7 @@ typings/
 .webpack/
 dist
 public
+src/_includes/webpack.ejs
 
 # Electron-Forge
 out/

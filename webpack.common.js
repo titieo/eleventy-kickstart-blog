@@ -1,15 +1,20 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const path = require('path');
-module.exports = {
-    entry: path.resolve(__dirname, 'src/index.js'),
+const glob = require('glob');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const entries = glob.sync(
+    path.resolve(__dirname, 'src/images/*.{png,gif,jpg,jpeg}'),
+);
+entries.push(path.resolve(__dirname, 'src/main.css'));
+entries.push(path.resolve(__dirname, 'src/index.js'));
 
+module.exports = {
+    entry: entries,
     output: {
         path: path.resolve(__dirname, 'public'),
-        filename: '[name].[contenthash].min.js',
-        clean: true,
-        pathinfo: false,
+        filename: '[name].[contenthash].js',
+        publicPath: '/',
     },
 
     optimization: {
@@ -59,7 +64,7 @@ module.exports = {
                         // In options we can set different things like format
                         // and directory to save
                         options: {
-                            outputPath: 'img',
+                            outputPath: 'images/[name].[ext]',
                         },
                     },
                 ],
@@ -80,10 +85,6 @@ module.exports = {
         ],
     },
     plugins: [
-        new MiniCssExtractPlugin({
-            // filename: 'main.css',
-            // chunkFilename: 'vendor.css',
-        }),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'webpack.html'),
             filename: path.resolve(__dirname, 'src/_includes/webpack.ejs'),

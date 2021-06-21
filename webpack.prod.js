@@ -1,18 +1,11 @@
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
-const path = require('path');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const { extendDefaultPlugins } = require('svgo');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = merge(common, {
     mode: 'production',
-    output: {
-        path: path.resolve(__dirname, 'public'),
-        clean: true,
-        pathinfo: false,
-        filename: '[name].min.js',
-    },
     optimization: {
         minimize: true,
         minimizer: [
@@ -24,6 +17,9 @@ module.exports = merge(common, {
         // runtimeChunk: 'single',
     },
     plugins: [
+        new MiniCssExtractPlugin({
+            filename: 'styles/[name].css',
+        }),
         new ImageMinimizerPlugin({
             minimizerOptions: {
                 // Lossless optimization with custom option
