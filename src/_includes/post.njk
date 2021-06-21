@@ -2,6 +2,16 @@
 layout: base.njk
 tags: post
 ---
-<main>
-  {{ content | safe }}
-</main>
+</head>
+<body>
+  <main>
+    {{ content | safe }}
+  </main>
+  <script src="https://utteranc.es/client.js"
+        repo= "{{ comment.repo }}"
+        issue-term="{{ comment.issueTerm }}"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+</body>

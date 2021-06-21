@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.3/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.3/reveal.js/dist/theme/black.css">
+</head>
+<body>
+{{ content | safe }}
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.3/dist/reveal.js" crossorigin="anonymous" async></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.3/plugin/zoom/zoom.js" crossorigin="anonymous" async></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.3/plugin/notes/notes.js" crossorigin="anonymous" async></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.3/plugin/search/search.js" crossorigin="anonymous" async></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.3/plugin/highlight/highlight.js" crossorigin="anonymous" async></script>
+<script>
+    // https://revealjs.com/initialization/
+    Reveal.initialize({
+        controls: slide.controls,
+        controlsTutorial: slide.controlsTutorial,
+        controlsLayout: slide.controlsLayout,
+        controlsBackArrows: slide.controlsBackArrows,
+        progress: slide.progress,
+        slideNumber: slide.slideNumber,
+        showSlideNumber: slide.showSlideNumber,
+        hashOneBasedIndex: slide.hashOneBasedIndex,
+        hash: slide.hash,
+        respondToHashChanges: slide.respondToHashChanges,
+        history: slide.history,
+        keyboard: slide.keyboard,
+        keyboardCondition: slide.keyboardCondition,
+        disableLayout: slide.disableLayout,
+        overview: slide.overview,
+        center: slide.center,
+        touch: slide.touch,
+        loop: slide.loop,
+        rtl: slide.rtl,
+        navigationMode: slide.navigationMode,
+        shuffle: slide.shuffle,
+        fragments: slide.fragments,
+        fragmentInURL: slide.fragmentInURL,
+        embedded: slide.embedded,
+        help: slide.help,
+        pause: slide.pause,
+        showNotes: slide.showNotes,
+        autoPlayMedia: slide.autoPlayMedia,
+        preloadIframes: slide.preloadIframes,
+        autoAnimate: slide.autoAnimate,
+        autoAnimateMatcher: slide.autoAnimateMatcher,
+        autoAnimateEasing: slide.autoAnimateEasing,
+        autoAnimateDuration: slide.autoAnimateDuration,
+        autoAnimateUnmatched: slide.autoAnimateUnmatched,
+        autoAnimateStyles: slide.autoAnimateStyles,
+        autoSlide: slide.autoSlide,
+        autoSlideStoppable: slide.autoSlideStoppable,
+        autoSlideMethod: slide.autoSlideMethod,
+        defaultTiming: slide.defaultTiming,
+        mouseWheel: slide.mouseWheel,
+        previewLinks: slide.previewLinks,
+        postMessage: slide.postMessage,
+        postMessageEvents: slide.postMessageEvents,
+        focusBodyOnPageVisibilityChange: slide.focusBodyOnPageVisibilityChange,
+        transition: slide.transition,
+        transitionSpeed: slide.transitionSpeed,
+        backgroundTransition: slide.backgroundTransition,
+        pdfMaxPagesPerSlide: slide.pdfMaxPagesPerSlide,
+        pdfSeparateFragments: slide.pdfSeparateFragments,
+        pdfPageHeightOffset: slide.pdfPageHeightOffset,
+        viewDistance: slide.viewDistance,
+        mobileViewDistance: slide.mobileViewDistance,
+        display: slide.display,
+        hideInactiveCursor: slide.hideInactiveCursor,
+        hideCursorTime: slide.hideCursorTime,
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+            RevealZoom,
+            RevealNotes,
+            RevealSearch,
+            // RevealMarkdown,
+            RevealHighlight,
+        ],
+    });
+</script>
+</body>

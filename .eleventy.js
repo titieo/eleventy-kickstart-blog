@@ -30,6 +30,9 @@ module.exports = function (eleventyConfig) {
     });
     eleventyConfig.addLayoutAlias('post', 'post.njk');
     eleventyConfig.addLayoutAlias('home', 'home.njk');
+    eleventyConfig.addCollection('slides', function (collectionApi) {
+        return collectionApi.getFilteredByGlob('./src/slides/**/*.md');
+    });
     /*************************MarkdownIt Plugins & Options********************************/
     let options = {
         html: true,
