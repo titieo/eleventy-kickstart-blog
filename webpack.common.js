@@ -5,6 +5,13 @@ const path = require('path');
 module.exports = {
     entry: path.resolve(__dirname, 'src/index.js'),
 
+    output: {
+        path: path.resolve(__dirname, 'public'),
+        filename: '[name].[contenthash].min.js',
+        clean: true,
+        pathinfo: false,
+    },
+
     optimization: {
         splitChunks: {
             chunks: 'all',
@@ -52,7 +59,7 @@ module.exports = {
                         // In options we can set different things like format
                         // and directory to save
                         options: {
-                            outputPath: 'images',
+                            outputPath: 'img',
                         },
                     },
                 ],
@@ -78,7 +85,9 @@ module.exports = {
             // chunkFilename: 'vendor.css',
         }),
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'src/index.html'),
+            template: path.resolve(__dirname, 'webpack.html'),
+            filename: path.resolve(__dirname, 'src/_includes/webpack.ejs'),
+            inject: false,
         }),
         new FaviconsWebpackPlugin({
             logo: './src/logo.png',

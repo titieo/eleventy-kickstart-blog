@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html id="html" class="custom-scroll">
     <head lang="en-US">
@@ -5,8 +7,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{{title}}</title>
-        <meta name="author" content="cokaps016" />
-        <meta name="description" content="cokaps016 Personal Blog" />
+        <meta name="author" content="{{ site.authorName }}" />
+        <meta name="description" content="{{ site.description }}" />
+        {% include "webpack.njk" %}
     </head>
     <body id="body">
         <div class="h-screen bg-base-200 drawer text-base-content">
@@ -44,22 +47,13 @@
                         <!-- navbar is only visible for desktop -->
                         <div class="hidden lg:inline-block">
                             <ul class="mr-2 space-x-2 menu horizontal">
+                            {%- for nav in navs -%}
                                 <li>
-                                    <a
-                                        target="_blank"
-                                        href="https://tailwindcss.com/"
-                                        class="rounded-btn"
-                                        >TailwindCSS</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        target="_blank"
-                                        href="https://daisy.js.org/"
-                                        class="rounded-btn"
-                                        >DaisyUI</a
-                                    >
-                                </li>
+                                <a target="_blank" class="rounded-btn" href="{{ nav.link }}"
+                            >{{ nav.content }}</a
+                            >
+                        </li>
+                        {%- endfor -%}
                             </ul>
                         </div>
                         <select
@@ -107,16 +101,13 @@
             <div class="drawer-side">
                 <label for="menu-drawer" class="drawer-overlay"></label>
                 <ul class="p-4 overflow-y-auto menu w-80 bg-base-100">
+                {%- for nav in navs -%}
                     <li>
-                        <a target="_blank" href="https://tailwindcss.com/"
-                            >TailwindCSS</a
+                        <a target="_blank" href="{{ nav.link }}"
+                            >{{ nav.content }}</a
                         >
                     </li>
-                    <li>
-                        <a target="_blank" href="https://daisy.js.org/"
-                            >DaisyUI</a
-                        >
-                    </li>
+                {%- endfor -%}
                 </ul>
             </div>
         </div>

@@ -8,5 +8,8 @@
     "search.exclude": {
         "**/.yarn": true,
         "**/.pnp.*": true
-    }
+    },
+    "emmet.includeLanguages": {
+        "ejs": "html",
+    },
 }

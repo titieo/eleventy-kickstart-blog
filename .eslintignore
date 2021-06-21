@@ -10,3 +10,5 @@ public
 ######################
 src/lib
 *.min.js
+
+webpack.html

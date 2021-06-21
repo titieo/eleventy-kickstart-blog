@@ -19,6 +19,7 @@ bs-config.js
 !preload.js
 .webpack
 .webpack/
+webpack.html
 # Minified JS Library
 ######################
 src/lib

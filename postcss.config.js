@@ -1,8 +1,19 @@
-module.exports = {
-    plugins: [
-        require('autoprefixer'),
-        require('cssnano'),
-        require('tailwindcss'),
-        // More postCSS modules here if needed
-    ],
-};
+/* eslint-disable import/no-extraneous-dependencies, global-require */
+const plugins = [require('tailwindcss'), require('autoprefixer')];
+
+if (process.env.NODE_ENV === 'production') {
+    plugins.push(
+        require('cssnano')({
+            preset: [
+                'default',
+                {
+                    discardComments: {
+                        removeAll: true,
+                    },
+                },
+            ],
+        }),
+    );
+}
+
+module.exports = { plugins };

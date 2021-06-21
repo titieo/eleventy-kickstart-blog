@@ -1,0 +1,7 @@
+{# <link href="/assets../../public/vendors.css" rel="stylesheet" /><link
+    href="/assets../../public/main.css"
+    rel="stylesheet"
+/>
+#} {% for css in htmlWebpackPlugin.files.css %}
+<link href="/css{{ css }}" rel="stylesheet" />
+{% endfor %}

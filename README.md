@@ -84,6 +84,32 @@
 
 To get a local copy up and running follow these simple steps.
 
+### Features
+
+Production-ready in mind:
+
+-   🔥 [11ty](https://www.11ty.dev) for Static Site Generator
+-   🎨 Integrate with [Tailwind CSS](https://tailwindcss.com) (with [PurgeCSS](https://purgecss.com), remove unused CSS) and [DaisyUI](https://daisyui.com/)
+-   💅 [PostCSS](https://postcss.org) for processing [Tailwind CSS](https://tailwindcss.com)
+-   ⚡️ Lazy load images with [lazysizes](https://github.com/aFarkas/lazysizes)
+-   ✨ Compress image with [Imagemin](https://github.com/imagemin/imagemin)
+-   🎈 Syntax Highlighting with [Prism.js](https://prismjs.com)
+-   ☕ Minify HTML & CSS with [HTMLMinifier](https://www.npmjs.com/package/html-minifier) and [cssnano](https://cssnano.co)
+-   ✏️ Linter with [ESLint](https://eslint.org)
+-   🛠 Code Formatter with [Prettier](https://prettier.io)
+-   💨 Live reload
+-   📦 Module Bundler with [Webpack](https://webpack.js.org)
+-   🦊 Templating with <!--[EJS](https://ejs.co) and--> [NJK](https://mozilla.github.io/nunjucks/templating.html)
+-   🤖 SEO metadata and [Open Graph](https://ogp.me/) tags
+-   ⚙️ [JSON-LD](https://developers.google.com/search/docs/guides/intro-structured-data) for richer indexing
+-   🗺 Sitemap.xml
+-   ⚠️ 404 page
+-   📖 Pagination
+-   ✅ Cache busting
+-   💯 Maximize lighthouse score
+-   🌈 Include a FREE minimalist blog theme
+<!-- -   🗒 Netlify CMS (optional) -->
+
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
@@ -149,9 +175,9 @@ Project Link: [https://github.com/cokaps016/eleventy-kickstart-blog](https://git
 ## Acknowledgements
 
 -   [Best Readme Template](https://github.com/othneildrew/Best-README-Template)
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+-   [Eleventy Starter Boilerplate](https://github.com/ixartz/Eleventy-Starter-Boilerplate) (some code here is come from this repo)
+    <!-- MARKDOWN LINKS & IMAGES -->
+    <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/cokaps016/eleventy-kickstart-blog.svg?style=for-the-badge
 [contributors-url]: https://github.com/cokaps016/eleventy-kickstart-blog/graphs/contributors
