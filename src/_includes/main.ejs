@@ -1,3 +1,7 @@
+---
+title: A WebPage
+---
+
 <!DOCTYPE html>
 <html lang="<%= site.locale %>">
     <head>
@@ -60,7 +64,9 @@
                 "@context": "http://schema.org"
             }
         </script>
-        <% } %><%- include('webpack.ejs') %>
+        <% } %> <%- include('webpack.ejs') %>
     </head>
-    <%- content %>
+    <body>
+        <%- content %>
+    </body>
 </html>

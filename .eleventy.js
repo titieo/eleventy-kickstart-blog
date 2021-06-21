@@ -15,7 +15,19 @@ module.exports = function (eleventyConfig) {
     /*************************11ty Plugins********************************/
     eleventyConfig.addPlugin(readerBar);
     eleventyConfig.addPlugin(blogTools);
-    eleventyConfig.addPlugin(lazyImagesPlugin);
+    eleventyConfig.addPlugin(lazyImagesPlugin, {
+        transformImgPath: (imgPath) => {
+            if (
+                imgPath.startsWith('http://') ||
+                imgPath.startsWith('https://')
+            ) {
+                // Handle remote file
+                return imgPath;
+            } else {
+                return `./src/${imgPath}`;
+            }
+        },
+    });
     eleventyConfig.addLayoutAlias('post', 'post.njk');
     eleventyConfig.addLayoutAlias('home', 'home.njk');
     /*************************MarkdownIt Plugins & Options********************************/

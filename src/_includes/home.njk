@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: base.njk
 ---
 <h1>{{ Title }}</h1>
 <div class="hero min-h-screen" style="background-image: url(&quot;https://picsum.photos/id/1005/1600/1400&quot;);">
@@ -19,9 +19,3 @@ layout: base
                             </div>
                     </div></div>
 </div>
-<ul>
-{%- for post in collections.post -%}
-  <li>{{ post.data.title }}</li>
-  {% excerpt post %}
-{%- endfor -%}
-</ul>

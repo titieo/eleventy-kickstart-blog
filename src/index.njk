@@ -1,0 +1,9 @@
+---
+layout: home
+---
+<ul>
+{%- for post in collections.post -%}
+  <li>{{ post.data.title }}</li>
+  {% excerpt post %}
+{%- endfor -%}
+</ul>

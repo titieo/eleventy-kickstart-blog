@@ -12,4 +12,5 @@
     "emmet.includeLanguages": {
         "ejs": "html",
     },
+        "prettier.documentSelectors": ["**/*.njk"]
 }
