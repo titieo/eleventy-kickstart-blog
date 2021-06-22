@@ -8,9 +8,6 @@ const markdownItAttrs = require('markdown-it-attrs');
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 
 module.exports = function (eleventyConfig) {
-    eleventyConfig.addPlugin(lazyImagesPlugin);
-};
-module.exports = function (eleventyConfig) {
     eleventyConfig.setQuietMode(isDev);
     /*************************11ty Plugins********************************/
     eleventyConfig.addPlugin(readerBar);
@@ -34,6 +31,7 @@ module.exports = function (eleventyConfig) {
         return collectionApi.getFilteredByGlob('./src/slides/**/*.md');
     });
     /*************************MarkdownIt Plugins & Options********************************/
+    eleventyConfig.addWatchTarget('src/_includes/webpack.ejs');
     let options = {
         html: true,
     };
