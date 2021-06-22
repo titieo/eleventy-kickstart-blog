@@ -16,6 +16,9 @@ module.exports = merge(common, {
         ],
         // runtimeChunk: 'single',
     },
+    output: {
+        filename: '[name].js',
+    },
     plugins: [
         new MiniCssExtractPlugin({
             filename: 'styles/[name].css',

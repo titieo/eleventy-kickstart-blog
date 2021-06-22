@@ -36,9 +36,8 @@
                     "
                 >
                     <h3 class="font-semibold text-lg leading-tight truncate">
-                        {% if post.data.title %}{{ post.data.title }}{% else %}<code>{{
-                          post.url
-                        }}</code
+                        {% if post.data.title %}{{ post.data.title }}{% else
+                        %}<code>{{ post.url }}</code
                         >{% endif %}
                     </h3>
                     <p class="mt-2">{% excerpt post %}</p>
@@ -51,13 +50,16 @@
                             mt-2
                         "
                     >
-                        {{ card.author }} &bull; {{ post.date }}
-                        <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
+                        {{ post.data.author }} &bull; {{ post.date }}
+                        <time datetime="{{ post.date | dateIso }}">{{
+                            post.date | dateReadable
+                        }}</time>
                     </p>
-                    <a class="mt-2 btn" href="{{ post.url | url }}">Read More</a>
-                    {% for tag in post.data.tags | filterTagList %} {% set tagUrl %}/tags/{{
-                      tag | slug
-                    }}/{% endset %}
+                    <a class="mt-2 btn" href="{{ post.url | url }}"
+                        >Read More</a
+                    >
+                    {% for tag in post.data.tags | filterTagList %} {% set
+                    tagUrl %}/tags/{{ tag | slug }}/{% endset %}
                     <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
                     {% endfor %}
                 </div>
@@ -68,4 +70,3 @@
         <!--/ flex-->
     </div>
 </div>
-

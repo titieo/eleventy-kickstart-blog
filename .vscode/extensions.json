@@ -18,6 +18,7 @@
         "eg2.vscode-npm-script",
         "editorconfig.editorconfig",
         "stylelint.vscode-stylelint",
-        "arcanis.vscode-zipfs"
+        "arcanis.vscode-zipfs",
+        "okitavera.vscode-nunjucks-formatter"
     ]
 }

@@ -9,6 +9,9 @@
         "**/.yarn": true,
         "**/.pnp.*": true
     },
+    "[nunjucks]": {
+      "editor.defaultFormatter": "okitavera.vscode-nunjucks-formatter"
+    },
     "emmet.includeLanguages": {
         "ejs": "html",
     },

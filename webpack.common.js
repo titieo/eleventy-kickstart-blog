@@ -13,7 +13,6 @@ module.exports = {
     entry: entries,
     output: {
         path: path.resolve(__dirname, 'public'),
-        filename: '[name].[contenthash].js',
         publicPath: '/',
     },
 
