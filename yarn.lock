@@ -7731,6 +7731,7 @@ __metadata:
     markdown-it-attrs: ^4.0.0
     markdown-it-emoji: ^2.0.0
     mini-css-extract-plugin: ^1.6.0
+    moment: ^2.29.1
     npm-run-all: ^4.1.5
     overlayscrollbars: ^1.13.1
     postcss-loader: ^6.1.0
@@ -11621,6 +11622,13 @@ fsevents@~2.3.1:
   version: 1.0.1
   resolution: "modify-values@npm:1.0.1"
   checksum: 55165ae8b4ea2aafebe5027dd427d4a833d54606c81546f4d3c04943d99d194ac9481fa076719f326d243c475e2dfa5cf0219e68cffbbf9c44b24e46eb889779
+  languageName: node
+  linkType: hard
+
+"moment@npm:^2.29.1":
+  version: 2.29.1
+  resolution: "moment@npm:2.29.1"
+  checksum: 86729013febf7160de5b93da69273dd304d674b0224f9544b3abd09a87671ddd2cdd57598261ce57588910d63747ffd5590965e83c790d8bf327083c0e0a06e0
   languageName: node
   linkType: hard
 

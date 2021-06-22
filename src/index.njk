@@ -1,21 +1,18 @@
 ---
 layout: home
+eleventyNavigation:
+  key: Home
+  order: 1
 ---
+{% set postslist = collections.posts %}
+{% include "postslist.njk" %}
 
-<ul>
-    {%- for post in collections.post -%}
-    <li>{{ post.data.title }}</li>
-    {% excerpt post %} {%- endfor -%}
-</ul>
-<div class="pt-6 pb-12 bg-gray-300">
+{# <div class="pt-6 pb-12 bg-gray-300">
     <div id="card" class="">
-        <h2 class="text-center font-serif uppercase text-4xl xl:text-5xl">
-            Recent Articles
-        </h2>
         <!-- container for all cards -->
         <div class="container w-100 lg:w-4/5 mx-auto flex flex-col">
             <!-- card -->
-            {%- for post in collections.all -%}
+            {% for post in posts %}
             <div
                 v-for="card in cards"
                 class="
@@ -61,13 +58,15 @@ layout: home
                             mt-2
                         "
                     >
-                        {{ card.author }} &bull; {{ card.date }}
+                        {{ card.author }} &bull; {{ post.date }}
+                        <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
                     </p>
+                    <a class="mt-2 btn" href="{{ post.url | url }}">Read More</a>
                 </div>
             </div>
-            {%- endfor -%}
+            {% endfor %}
             <!--/ card-->
         </div>
         <!--/ flex-->
     </div>
-</div>
+</div> #}

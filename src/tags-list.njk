@@ -1,11 +1,14 @@
 ---
 permalink: /tags/
-layout: layouts/home.njk
+layout: home
+eleventyNavigation:
+  key: Tags
+  order: 2
 ---
 
 <h1>Tags</h1>
 
-{% for tag in collections.tagList | filterTagList %} {% set tagUrl %}/tags/{{
+{% for tag in collections.tagList %} {% set tagUrl %}/tags/{{
     tag | slug
 }}/{% endset %}
 <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>

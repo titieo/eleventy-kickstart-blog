@@ -9,6 +9,10 @@ const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const pluginNavigation = require('@11ty/eleventy-navigation');
+const htmlmin = require('html-minifier');
+const moment = require('moment');
+
+moment.locale('en');
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.setQuietMode(isDev);
@@ -31,16 +35,38 @@ module.exports = function (eleventyConfig) {
             }
         },
     });
-    eleventyConfig.addLayoutAlias('post', 'post.njk');
-    eleventyConfig.addLayoutAlias('home', 'home.njk');
+    eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
+        if (outputPath.endsWith('.html')) {
+            const minified = htmlmin.minify(content, {
+                useShortDoctype: true,
+                removeComments: true,
+                collapseWhitespace: true,
+                minifyJS: true,
+            });
+            return minified;
+        }
+
+        return content;
+    });
+    eleventyConfig.addLayoutAlias('slide', 'layouts/slide.njk');
+    eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
+    eleventyConfig.addLayoutAlias('home', 'layouts/home.njk');
     eleventyConfig.addCollection('slides', function (collectionApi) {
         return collectionApi.getFilteredByGlob('./src/slides/**/*.md');
     });
-    eleventyConfig.addFilter('filterTagList', (tags) => {
-        // should match the list in tags.njk
-        return (tags || []).filter(
-            (tag) => ['all', 'nav', 'post', 'posts'].indexOf(tag) === -1,
-        );
+    // eleventyConfig.addFilter('filterTagList', (tags) => {
+    //     // should match the list in tags.njk
+    //     return (tags || []).filter(
+    //         (tag) => ['all', 'nav', 'post', 'posts'].indexOf(tag) === -1,
+    //     );
+    // });
+
+    eleventyConfig.addFilter('dateIso', (date) => {
+        return moment(date).toISOString();
+    });
+
+    eleventyConfig.addFilter('dateReadable', (date) => {
+        return moment(date).utc().format('LL'); // E.g. May 31, 2019
     });
 
     // Create an array of all tags
@@ -78,12 +104,12 @@ module.exports = function (eleventyConfig) {
         linkify: true,
     })
         .use(markdownItAttrs)
-        .use(markdownItEmoji);
-    use(markdownItAnchor, {
-        permalink: true,
-        permalinkClass: 'direct-link',
-        permalinkSymbol: '#',
-    });
+        .use(markdownItEmoji)
+        .use(markdownItAnchor, {
+            permalink: true,
+            permalinkClass: 'direct-link',
+            permalinkSymbol: '#',
+        });
     eleventyConfig.setLibrary('md', markdownIt);
     return {
         dir: {
