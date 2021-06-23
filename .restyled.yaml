@@ -1,0 +1,10 @@
+enabled: true
+comments: true
+request_review: owner
+exclude:
+    - '**/node_modules/**/*'
+    - '**/vendor/**/*'
+    - '.github/workflows/**/*'
+
+labels:
+    - restyle
