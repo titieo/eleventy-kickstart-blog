@@ -3,59 +3,58 @@
 
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
-    exclude: ['**/node_modules/**/*', 'src/_data'],
-    mount: {
-        public: '/',
-    },
-    optimize: {
-        bundle: true,
-        minify: true,
-        target: 'es2020',
-        treeshake: true,
-    },
-    plugins: [
-        ['@snowpack/plugin-babel'],
-        '@snowpack/plugin-postcss',
-        // [
-        //   '@snowpack/plugin-build-script',
-        //   {
-        //     cmd: 'babel --filename $FILE', // cmd to run
-        //   },
-        // ],
-        [
-            '@snowpack/plugin-run-script',
-            {
-                cmd: 'eleventy',
-                watch: '$1 --watch',
-            },
-        ],
-        // [
-        //     '@snowpack/plugin-webpack',
-        //     {
-        //         outputPattern: {
-        //             css: 'main.css',
-        //             js: '[filename].js',
-        //         },
-        //         extendConfig: (config) => {
-        //             config.plugins.push(/* ... */);
-        //             return config;
-        //         },
-        //         sourceMap: false,
-        //     },
-        // ],
+  exclude : [ '**/node_modules/**/*', 'src/_data' ],
+  mount : {
+    public : '/',
+  },
+  optimize : {
+    bundle : true,
+    minify : true,
+    target : 'es2020',
+    treeshake : true,
+  },
+  plugins : [
+    [ '@snowpack/plugin-babel' ], '@snowpack/plugin-postcss',
+    // [
+    //   '@snowpack/plugin-build-script',
+    //   {
+    //     cmd: 'babel --filename $FILE', // cmd to run
+    //   },
+    // ],
+    [
+      '@snowpack/plugin-run-script',
+      {
+        cmd : 'eleventy',
+        watch : '$1 --watch',
+      },
     ],
-    routes: [
-        /* Enable an SPA Fallback in development: */
-        { match: 'routes', src: '.*', dest: '/index.html' },
-    ],
-    packageOptions: {
-        source: 'remote',
-    },
-    devOptions: {
-        tailwindConfig: './tailwind.config.js',
-    },
-    buildOptions: {
-        hmrDelay: 300,
-        /* ... */
-    },
+    // [
+    //     '@snowpack/plugin-webpack',
+    //     {
+    //         outputPattern: {
+    //             css: 'main.css',
+    //             js: '[filename].js',
+    //         },
+    //         extendConfig: (config) => {
+    //             config.plugins.push(/* ... */);
+    //             return config;
+    //         },
+    //         sourceMap: false,
+    //     },
+    // ],
+  ],
+  routes : [
+    /* Enable an SPA Fallback in development: */
+    {match : 'routes', src : '.*', dest : '/index.html'},
+  ],
+  packageOptions : {
+    source : 'remote',
+  },
+  devOptions : {
+    tailwindConfig : './tailwind.config.js',
+  },
+  buildOptions : {
+    hmrDelay : 300,
+    /* ... */
+  },
 };
