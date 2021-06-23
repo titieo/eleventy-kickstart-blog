@@ -18,7 +18,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![js-standard-style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
 
 <!-- PROJECT LOGO -->
 <br />
@@ -189,5 +189,3 @@ Project Link: [https://github.com/cokaps016/eleventy-kickstart-blog](https://git
 [issues-url]: https://github.com/cokaps016/eleventy-kickstart-blog/issues
 [license-shield]: https://img.shields.io/github/license/cokaps016/eleventy-kickstart-blog.svg?style=for-the-badge
 [license-url]: https://github.com/cokaps016/eleventy-kickstart-blog/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/cokaps016

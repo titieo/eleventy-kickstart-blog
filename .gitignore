@@ -92,11 +92,13 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
-# Webpack
-.webpack/
-dist
-public
-src/_includes/webpack.ejs
+# Snowpack
+public/*
+!public/scripts/
+!public/styles/
+!public/main.css
+!public/index.js
+!public/images/*
 
 # Electron-Forge
 out/
