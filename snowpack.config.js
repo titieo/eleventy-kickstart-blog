@@ -12,7 +12,9 @@ module.exports = {
     ],
     mount: {
         public: { url: '/', static: true },
-        src: '/dist',
+        'src/scripts': '/scripts',
+        'src/styles': '/styles',
+        'src/images': '/images',
     },
     optimize: {
         bundle: true,
@@ -59,7 +61,8 @@ module.exports = {
         source: 'remote',
     },
     devOptions: {
-        tailwindConfig: './tailwind.config.js',
+        // https://github.com/tailwindlabs/tailwindcss/issues/3950#issuecomment-846967828
+        // tailwindConfig: './tailwind.config.js',
     },
     buildOptions: {
         hmrDelay: 300,

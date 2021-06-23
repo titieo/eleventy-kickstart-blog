@@ -58,9 +58,8 @@
                     <a class="mt-2 btn" href="{{ post.url | url }}"
                         >Read More</a
                     >
-                    {% for tag in post.data.tags %} {% set tagUrl %}/tags/{{
-                        tag | slug
-                    }}/{% endset %}
+                    {% for tag in post.data.tags | filterTagList %} {% set
+                    tagUrl %}/tags/{{ tag | slug }}/{% endset %}
                     <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
                     {% endfor %}
                 </div>

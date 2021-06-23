@@ -2,7 +2,7 @@ import 'overlayscrollbars/js/OverlayScrollbars.min.js';
 import '@fortawesome/fontawesome-free/js/all';
 // Import Packages
 
-import './scripts/scrollBar';
+import './scrollBar';
 
 import Alpine from 'alpinejs';
 import { themeChange } from 'theme-change';

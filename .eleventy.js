@@ -51,15 +51,23 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addLayoutAlias('slide', 'layouts/slide.njk');
     eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
     eleventyConfig.addLayoutAlias('home', 'layouts/home.njk');
-    eleventyConfig.addCollection('slides', function (collectionApi) {
-        return collectionApi.getFilteredByGlob('./src/slides/**/*.md');
+    eleventyConfig.addCollection('allSlides', function (collectionApi) {
+        return collectionApi.getFilteredByGlob('./src/content/slides/**/*.md');
     });
-    // eleventyConfig.addFilter('filterTagList', (tags) => {
-    //     // should match the list in tags.njk
-    //     return (tags || []).filter(
-    //         (tag) => ['all', 'nav', 'post', 'posts'].indexOf(tag) === -1,
-    //     );
-    // });
+    eleventyConfig.addFilter('filterTagList', (tags) => {
+        // should match the list in tags.njk
+        return (tags || []).filter(
+            (tag) => ['all', 'nav', 'post', 'posts'].indexOf(tag) === -1,
+        );
+    });
+
+    eleventyConfig.addCollection('allPosts', function (collectionApi) {
+        return collectionApi.getFilteredByGlob('./src/content/posts/*.md');
+    });
+
+    eleventyConfig.addCollection('allPages', function (collectionApi) {
+        return collectionApi.getFilteredByGlob('./src/content/**/*.md');
+    });
 
     eleventyConfig.addFilter('dateIso', (date) => {
         return moment(date).toISOString();
@@ -77,25 +85,6 @@ module.exports = function (eleventyConfig) {
         });
 
         return [...tagSet];
-    });
-
-    eleventyConfig.setBrowserSyncConfig({
-        callbacks: {
-            ready: function (err, browserSync) {
-                const content_404 = fs.readFileSync('_site/404.html');
-
-                browserSync.addMiddleware('*', (req, res) => {
-                    // Provides the 404 content without redirect.
-                    res.writeHead(404, {
-                        'Content-Type': 'text/html; charset=UTF-8',
-                    });
-                    res.write(content_404);
-                    res.end();
-                });
-            },
-        },
-        ui: false,
-        ghostMode: false,
     });
     /*************************MarkdownIt Plugins & Options********************************/
     const markdownIt = mdIt({
