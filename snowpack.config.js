@@ -3,9 +3,16 @@
 
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
-    exclude: ['**/node_modules/**/*', 'src/_data'],
+    exclude: [
+        '**/node_modules/**/*',
+        'src/_data',
+        'src/**/*.md',
+        'src/**/*.njk',
+        'src/**/*.ejs',
+    ],
     mount: {
         public: '/',
+        src: { url: '/', static: true },
     },
     optimize: {
         bundle: true,

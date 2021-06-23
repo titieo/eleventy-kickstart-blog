@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/js/all';
 import './scripts/scrollBar';
 
 import Alpine from 'alpinejs';
-import {themeChange} from 'theme-change';
+import { themeChange } from 'theme-change';
 
 window.Alpine = Alpine;
 Alpine.start();

@@ -93,12 +93,8 @@ typings/
 .dynamodb/
 
 # Snowpack
-public/*
-!public/scripts/
-!public/styles/
-!public/main.css
-!public/index.js
-!public/images/*
+public/
+
 
 # Electron-Forge
 out/
