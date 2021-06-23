@@ -1,5 +1,6 @@
 {
     "recommendations": [
+        "christian-kohler.npm-intellisense",
         "coenraads.bracket-pair-colorizer",
         "mikestead.dotenv",
         "dsznajder.es7-react-js-snippets",
