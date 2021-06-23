@@ -18,13 +18,13 @@
     }
   },
   "scripts": {
-    "build": "snowpack build",
+    "build": "cross-env ELEVENTY_ENV=production NODE_ENV=production snowpack build",
     "clean": "rimraf public",
     "cz": "git add . && git-cz && git push origin snowpack",
     "debug": "run-script-os",
     "debug:default": "DEBUG=Eleventy* npx @11ty/eleventy --dryrun",
     "debug:windows": "set DEBUG=Eleventy* & npx @11ty/eleventy --dryrun",
-    "dev": "yarn clean && snowpack dev",
+    "dev": "cross-env ELEVENTY_ENV=development NODE_ENV=development yarn clean && npx @11ty/eleventy && snowpack dev",
     "folder": "tree -I \"node_modules\"",
     "format": "concurrently \"yarn:format-*\" && echo Please apply the diff",
     "format-eslint": "echo Fixing Lint Issues With Eslint... && yarn eslint --ext .js --fix --quiet && echo Fix generated successfully. || (echo Fix failed! && exit 1)",
@@ -76,6 +76,7 @@
     "@snowpack/plugin-webpack": "^2.3.1",
     "autoprefixer": "^10.2.6",
     "concurrently": "^6.2.0",
+    "cross-env": "^7.0.3",
     "cssnano": "^5.0.6",
     "eleventy-plugin-lazyimages": "^2.1.0",
     "eslint": "7.28.0",

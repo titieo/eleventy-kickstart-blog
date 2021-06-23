@@ -1,4 +1,4 @@
-<div class="pt-6 pb-12 bg-gray-300">
+<div class="pt-6 pb-12 bg-current bg-opacity-50">
     <div id="card" class="">
         <!-- container for all cards -->
         <div class="container w-100 lg:w-4/5 mx-auto flex flex-col">
@@ -58,8 +58,9 @@
                     <a class="mt-2 btn" href="{{ post.url | url }}"
                         >Read More</a
                     >
-                    {% for tag in post.data.tags | filterTagList %} {% set
-                    tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+                    {% for tag in post.data.tags %} {% set tagUrl %}/tags/{{
+                        tag | slug
+                    }}/{% endset %}
                     <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
                     {% endfor %}
                 </div>

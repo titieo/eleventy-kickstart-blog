@@ -78,6 +78,7 @@ module.exports = function (eleventyConfig) {
 
         return [...tagSet];
     });
+
     eleventyConfig.setBrowserSyncConfig({
         callbacks: {
             ready: function (err, browserSync) {
@@ -97,7 +98,6 @@ module.exports = function (eleventyConfig) {
         ghostMode: false,
     });
     /*************************MarkdownIt Plugins & Options********************************/
-    eleventyConfig.addWatchTarget('src/_includes/webpack.ejs');
     const markdownIt = mdIt({
         html: true,
         breaks: true,

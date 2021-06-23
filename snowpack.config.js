@@ -11,13 +11,13 @@ module.exports = {
         'src/**/*.ejs',
     ],
     mount: {
-        public: '/',
-        src: { url: '/', static: true },
+        public: { url: '/', static: true },
+        src: '/dist',
     },
     optimize: {
         bundle: true,
         minify: true,
-        target: 'es2020',
+        target: 'es2017',
         treeshake: true,
     },
     plugins: [
