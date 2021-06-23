@@ -16,12 +16,12 @@ module.exports = {
         'src/styles': '/styles',
         'src/images': '/images',
     },
-    optimize: {
-        bundle: true,
-        minify: true,
-        target: 'es2017',
-        treeshake: true,
-    },
+    // optimize: {
+    //     bundle: true,
+    //     minify: true,
+    //     target: 'es2017',
+    //     treeshake: true,
+    // },
     plugins: [
         ['@snowpack/plugin-babel'],
         '@snowpack/plugin-postcss',

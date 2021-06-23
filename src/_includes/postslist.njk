@@ -1,4 +1,4 @@
-<div class="pt-6 pb-12 bg-current bg-opacity-50">
+<div class="pt-6 pb-12">
     <div id="card" class="">
         <!-- container for all cards -->
         <div class="container w-100 lg:w-4/5 mx-auto flex flex-col">
@@ -21,7 +21,7 @@
                 <div class="h-64 w-auto md:w-1/2">
                     <img
                         class="inset-0 h-full w-full object-cover object-center"
-                        :src="card.img"
+                        src="{{post.data.img}}"
                     />
                 </div>
                 <!-- content -->
@@ -50,10 +50,8 @@
                             mt-2
                         "
                     >
-                        {{ post.data.author }} &bull; {{ post.date }}
-                        <time datetime="{{ post.date | dateIso }}">{{
-                            post.date | dateReadable
-                        }}</time>
+                        {{ post.data.author }} &bull;
+                        <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
                     </p>
                     <a class="mt-2 btn" href="{{ post.url | url }}"
                         >Read More</a
