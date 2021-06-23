@@ -5106,7 +5106,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^5.1.0":
+"commander@npm:^5.0.0, commander@npm:^5.1.0":
   version: 5.1.0
   resolution: "commander@npm:5.1.0"
   checksum: d16141ea7f580945156fb8a06de2834c4647c7d9d3732ebd4534ab8e0b7c64747db301e18f2b840f28ea8fef51f7a8d6178e674b45a21931f0b65ff1c7f476b3
@@ -8251,6 +8251,7 @@ __metadata:
     stylelint-config-standard: 22.0.0
     tailwindcss: ^2.2.2
     theme-change: ^2.0.2
+    tree-node-cli: ^1.4.0
   languageName: unknown
   linkType: soft
 
@@ -18012,6 +18013,18 @@ fsevents@~2.1.2:
   bin:
     tree-kill: cli.js
   checksum: 967643efa4a231868232ea9d046c3ba7494ea6061fbb1e661c699b43ca0f0a14dad0782a631d915959d562830035166bab80ed726f9fe33b838af8a7516624ed
+  languageName: node
+  linkType: hard
+
+"tree-node-cli@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "tree-node-cli@npm:1.4.0"
+  dependencies:
+    commander: ^5.0.0
+  bin:
+    tree: ./bin/tree.js
+    treee: ./bin/tree.js
+  checksum: 22c168ad3b1cac0a98fc99d3ecaaf927e32a30fba4a29fa8b6b6c5fc92dda17fb74a12aca8c0f502d349ff4fc5ae6d3a27de9433d2f5816916cd9037969200a9
   languageName: node
   linkType: hard
 
