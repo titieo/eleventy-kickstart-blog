@@ -14,8 +14,7 @@
 <!-- markdownlint-disable MD041 MD033 MD030-->
 
 [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
+[![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![js-standard-style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
@@ -77,19 +76,28 @@
 Production-ready in mind:
 
 -   🔥 [11ty](https://www.11ty.dev) for Static Site Generator
--   🎨 Integrate with [Tailwind CSS](https://tailwindcss.com) (with [PurgeCSS](https://purgecss.com), remove unused CSS) and [DaisyUI](https://daisyui.com/)
--   💅 [PostCSS](https://postcss.org) for processing [Tailwind CSS](https://tailwindcss.com)
+-   🎨 Integrate with [Tailwind CSS](https://tailwindcss.com) (with
+    [PurgeCSS](https://purgecss.com), remove unused CSS) and
+    [DaisyUI](https://daisyui.com/)
+-   💅 [PostCSS](https://postcss.org) for processing
+    [Tailwind CSS](https://tailwindcss.com)
 -   ⚡️ Lazy load images with [lazysizes](https://github.com/aFarkas/lazysizes)
--   ✨ Compress image with [Squoosh](https://github.com/GoogleChromeLabs/squoosh)
+-   ✨ Compress image with
+    [Squoosh](https://github.com/GoogleChromeLabs/squoosh)
 -   🎈 Syntax Highlighting with [Prism.js](https://prismjs.com)
--   ☕ Minify HTML & CSS with [HTMLMinifier](https://www.npmjs.com/package/html-minifier) and [cssnano](https://cssnano.co)
+-   ☕ Minify HTML & CSS with
+    [HTMLMinifier](https://www.npmjs.com/package/html-minifier) and
+    [cssnano](https://cssnano.co)
 -   ✏️ Linter with [ESLint](https://eslint.org)
 -   🛠 Code Formatter with [Prettier](https://prettier.io)
 -   💨 Live reload
 -   📦 Module Bundler with [Snowpack](https://www.snowpack.dev/)
--   🦊 Templating with <!--[EJS](https://ejs.co) and--> [NJK](https://mozilla.github.io/nunjucks/templating.html)
+-   🦊 Templating with <!--[EJS](https://ejs.co) and-->
+    [NJK](https://mozilla.github.io/nunjucks/templating.html)
 -   🤖 SEO metadata and [Open Graph](https://ogp.me/) tags
--   ⚙️ [JSON-LD](https://developers.google.com/search/docs/guides/intro-structured-data) for richer indexing
+-   ⚙️
+    [JSON-LD](https://developers.google.com/search/docs/guides/intro-structured-data)
+    for richer indexing
 -   🗺 Sitemap.xml
 -   ⚠️ 404 page
 -   📖 Pagination
@@ -104,7 +112,8 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+This is an example of how to list things you need to use the software and how to
+install them.
 
 -   npm
 
@@ -130,17 +139,23 @@ This is an example of how to list things you need to use the software and how to
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Use this space to show useful examples of how a project can be used. Additional
+screenshots, code examples and demos work well in this space. You may also link
+to more resources.
 
 ## Roadmap
 
-See the [open issues](https://github.com/cokaps016/eleventy-kickstart-blog/issues) for a list of proposed features (and known issues).
+See the
+[open issues](https://github.com/cokaps016/eleventy-kickstart-blog/issues) for a
+list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to
+be learn, inspire, and create. Any contributions you make are **greatly
+appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -160,24 +175,34 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 cokaps016 - [@cokaps016](https://twitter.com/cokaps016) - cokaps016@icloud.com
 
-Project Link: [https://github.com/cokaps016/eleventy-kickstart-blog](https://github.com/cokaps016/eleventy-kickstart-blog)
+Project Link:
+[https://github.com/cokaps016/eleventy-kickstart-blog](https://github.com/cokaps016/eleventy-kickstart-blog)
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## Acknowledgements
 
 -   [Best Readme Template](https://github.com/othneildrew/Best-README-Template)
--   [Eleventy Starter Boilerplate](https://github.com/ixartz/Eleventy-Starter-Boilerplate) (some code here is come from this repo)
+-   [Eleventy Starter Boilerplate](https://github.com/ixartz/Eleventy-Starter-Boilerplate)
+    (some code here is come from this repo)
     <!-- MARKDOWN LINKS & IMAGES -->
     <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/cokaps016/eleventy-kickstart-blog.svg?style=for-the-badge
-[contributors-url]: https://github.com/cokaps016/eleventy-kickstart-blog/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/cokaps016/eleventy-kickstart-blog.svg?style=for-the-badge
-[forks-url]: https://github.com/cokaps016/eleventy-kickstart-blog/network/members
-[stars-shield]: https://img.shields.io/github/stars/cokaps016/eleventy-kickstart-blog.svg?style=for-the-badge
+[contributors-shield]:
+    https://img.shields.io/github/contributors/cokaps016/eleventy-kickstart-blog.svg?style=for-the-badge
+[contributors-url]:
+    https://github.com/cokaps016/eleventy-kickstart-blog/graphs/contributors
+[forks-shield]:
+    https://img.shields.io/github/forks/cokaps016/eleventy-kickstart-blog.svg?style=for-the-badge
+[forks-url]:
+    https://github.com/cokaps016/eleventy-kickstart-blog/network/members
+[stars-shield]:
+    https://img.shields.io/github/stars/cokaps016/eleventy-kickstart-blog.svg?style=for-the-badge
 [stars-url]: https://github.com/cokaps016/eleventy-kickstart-blog/stargazers
-[issues-shield]: https://img.shields.io/github/issues/cokaps016/eleventy-kickstart-blog.svg?style=for-the-badge
+[issues-shield]:
+    https://img.shields.io/github/issues/cokaps016/eleventy-kickstart-blog.svg?style=for-the-badge
 [issues-url]: https://github.com/cokaps016/eleventy-kickstart-blog/issues
-[license-shield]: https://img.shields.io/github/license/cokaps016/eleventy-kickstart-blog.svg?style=for-the-badge
-[license-url]: https://github.com/cokaps016/eleventy-kickstart-blog/blob/master/LICENSE.txt
+[license-shield]:
+    https://img.shields.io/github/license/cokaps016/eleventy-kickstart-blog.svg?style=for-the-badge
+[license-url]:
+    https://github.com/cokaps016/eleventy-kickstart-blog/blob/master/LICENSE.txt
