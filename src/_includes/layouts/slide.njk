@@ -66,41 +66,15 @@
             }
         </script>
         <% } %>
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.3/dist/reveal.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.3/reveal.js/dist/theme/black.css"
-        />
+        <link rel="stylesheet" href="/slide.css" />
     </head>
     <body>
         {{ content | safe }}
         <script
-            src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.3/dist/reveal.js"
+            src="/slide.js"
             crossorigin="anonymous"
             async
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.3/plugin/zoom/zoom.js"
-            crossorigin="anonymous"
-            async
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.3/plugin/notes/notes.js"
-            crossorigin="anonymous"
-            async
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.3/plugin/search/search.js"
-            crossorigin="anonymous"
-            async
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.3/plugin/highlight/highlight.js"
-            crossorigin="anonymous"
-            async
+            type="module"
         ></script>
         <script>
             // https://revealjs.com/initialization/

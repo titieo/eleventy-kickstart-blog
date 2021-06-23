@@ -7,6 +7,12 @@ module.exports = {
     mount: {
         public: '/',
     },
+    optimize: {
+        bundle: true,
+        minify: true,
+        target: 'es2020',
+        treeshake: true,
+    },
     plugins: [
         ['@snowpack/plugin-babel'],
         '@snowpack/plugin-postcss',
@@ -23,27 +29,27 @@ module.exports = {
                 watch: '$1 --watch',
             },
         ],
-        [
-            '@snowpack/plugin-webpack',
-            {
-                outputPattern: {
-                    css: 'main.css',
-                    js: '[filename].js',
-                },
-                extendConfig: (config) => {
-                    config.plugins.push(/* ... */);
-                    return config;
-                },
-                sourceMap: false,
-            },
-        ],
+        // [
+        //     '@snowpack/plugin-webpack',
+        //     {
+        //         outputPattern: {
+        //             css: 'main.css',
+        //             js: '[filename].js',
+        //         },
+        //         extendConfig: (config) => {
+        //             config.plugins.push(/* ... */);
+        //             return config;
+        //         },
+        //         sourceMap: false,
+        //     },
+        // ],
     ],
     routes: [
         /* Enable an SPA Fallback in development: */
         { match: 'routes', src: '.*', dest: '/index.html' },
     ],
     packageOptions: {
-        /* ... */
+        source: 'remote',
     },
     devOptions: {
         tailwindConfig: './tailwind.config.js',

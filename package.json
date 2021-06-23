@@ -25,6 +25,8 @@
     "scripts": {
         "cz": "git add . && git-cz && git push origin snowpack",
         "release": "bump-version",
+        "i": "snowpack add",
+        "rm": "snowpack rm",
         "postinstall": "husky install",
         "lintci-stylelint": "echo Linting With Stylelint... && stylelint public/styles/**/*.css && echo Lint passed. || (echo Lint failed, attempting fix... && stylelint public/styles/**/*.css --fix && echo Fix generated successfully. || (echo Fix failed! && exit 1))",
         "lintci-eslint": "echo Linting With Eslint... &&  yarn eslint --format github --ext .js --quiet && echo Lint passed. || (echo Lint failed, attempting fix... && yarn eslint --ext .js --fix --quiet && echo Fix generated successfully. || (echo Fix failed! && exit 1))",
@@ -97,17 +99,13 @@
         "@11ty/eleventy-navigation": "^0.3.2",
         "@11ty/eleventy-plugin-rss": "^1.1.1",
         "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1",
-        "@fortawesome/fontawesome-free": "^5.15.3",
         "@snowpack/plugin-build-script": "^2.1.0",
         "@snowpack/plugin-run-script": "^2.3.0",
-        "alpinejs": "^3.0.9",
         "daisyui": "^1.4.0",
         "eleventy-plugin-blog-tools": "^0.3.1",
         "eleventy-plugin-reader-bar": "^0.2.0",
         "markdown-it-anchor": "^8.0.3",
         "markdown-it-attrs": "^4.0.0",
-        "markdown-it-emoji": "^2.0.0",
-        "overlayscrollbars": "^1.13.1",
-        "theme-change": "^2.0.2"
+        "markdown-it-emoji": "^2.0.0"
     }
 }
