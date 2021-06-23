@@ -10,6 +10,19 @@ module.exports = {
     plugins: [
         ['@snowpack/plugin-babel'],
         '@snowpack/plugin-postcss',
+        // [
+        //   '@snowpack/plugin-build-script',
+        //   {
+        //     cmd: 'babel --filename $FILE', // cmd to run
+        //   },
+        // ],
+        [
+            '@snowpack/plugin-run-script',
+            {
+                cmd: 'eleventy',
+                watch: '$1 --watch',
+            },
+        ],
         [
             '@snowpack/plugin-webpack',
             {

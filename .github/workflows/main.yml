@@ -28,10 +28,10 @@ jobs:
               run: yarn build
             - name: Deploy
               uses: JamesIves/github-pages-deploy-action@4.1.4
-              if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main'}}
+              if: ${{ github.event_name == 'push'}}
               with:
                   branch: gh-pages
-                  folder: public
+                  folder: build
     lint:
         name: Lint
         runs-on: ubuntu-latest

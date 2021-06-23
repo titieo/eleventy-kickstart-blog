@@ -2680,6 +2680,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@snowpack/plugin-build-script@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@snowpack/plugin-build-script@npm:2.1.0"
+  dependencies:
+    execa: ^5.0.0
+    npm-run-path: ^4.0.1
+  checksum: 1dda70fe8277f4f02119afb79e492fc393524020373c5852eddb54f30712c164accb894fb0952bc10e17d2ba062466d8420c033b514f335da894628487babb5d
+  languageName: node
+  linkType: hard
+
 "@snowpack/plugin-postcss@npm:^1.4.1":
   version: 1.4.1
   resolution: "@snowpack/plugin-postcss@npm:1.4.1"
@@ -2691,6 +2701,16 @@ __metadata:
   peerDependencies:
     postcss: "*"
   checksum: cea311cd521ea3df217ff12e46922b7a8498cfaf29f64cbd617ae391a7d6042cb0b75955cc187faaa60793038bf48b1ac6bbba837e3dcc954db4591bfba29416
+  languageName: node
+  linkType: hard
+
+"@snowpack/plugin-run-script@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "@snowpack/plugin-run-script@npm:2.3.0"
+  dependencies:
+    execa: ^5.0.0
+    npm-run-path: ^4.0.1
+  checksum: 49763f94f02fa85b5ac71b724c3676a13f7edfb86a3ad691665441be4c000499ecd8dfed3efb1291dd73862410c4c3bab0b44f3bc75820f472d9c3045ac76a6e
   languageName: node
   linkType: hard
 
@@ -8185,7 +8205,9 @@ __metadata:
     "@fortawesome/fontawesome-free": ^5.15.3
     "@picgo/bump-version": ^1.1.0
     "@snowpack/plugin-babel": ^2.1.7
+    "@snowpack/plugin-build-script": ^2.1.0
     "@snowpack/plugin-postcss": ^1.4.1
+    "@snowpack/plugin-run-script": ^2.3.0
     "@snowpack/plugin-webpack": ^2.3.1
     alpinejs: ^3.0.9
     autoprefixer: ^10.2.6

@@ -42,12 +42,10 @@
         "debug:win32": "set DEBUG=Eleventy* & npx @11ty/eleventy",
         "debug:default": "DEBUG=Eleventy* npx @11ty/eleventy",
         "build-11ty": "npx @11ty/eleventy",
-        "build": "yarn build-webpack && yarn build-11ty",
-        "dev-11ty": "npx @11ty/eleventy --serve --port=8081",
         "clean": "rimraf public",
         "start": "snowpack dev",
-        "build-snow": "snowpack build",
-        "dev": "yarn clean && yarn build-dev && concurrently \"yarn:dev-*\""
+        "build": "snowpack build",
+        "dev": "yarn clean && snowpack dev"
     },
     "devDependencies": {
         "@11ty/eleventy": "^0.12.1",
@@ -98,6 +96,8 @@
         "@11ty/eleventy-plugin-rss": "^1.1.1",
         "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1",
         "@fortawesome/fontawesome-free": "^5.15.3",
+        "@snowpack/plugin-build-script": "^2.1.0",
+        "@snowpack/plugin-run-script": "^2.3.0",
         "alpinejs": "^3.0.9",
         "daisyui": "^1.4.0",
         "eleventy-plugin-blog-tools": "^0.3.1",

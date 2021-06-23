@@ -70,21 +70,9 @@
 
 ![Product Name Screen Shot](logo.jpg)
 
-### Built With
-
--   [Babel](https://babeljs.io/)
--   [Eslint](https://eslint.org/)
--   [Stylelint](https://stylelint.io/)
--   [Webpack](https://webpack.js.org/)
--   [Prettier](https://prettier.io/)
-
 <!-- GETTING STARTED -->
 
-## Getting Started
-
-To get a local copy up and running follow these simple steps.
-
-### Features
+## Features
 
 Production-ready in mind:
 
@@ -92,13 +80,13 @@ Production-ready in mind:
 -   🎨 Integrate with [Tailwind CSS](https://tailwindcss.com) (with [PurgeCSS](https://purgecss.com), remove unused CSS) and [DaisyUI](https://daisyui.com/)
 -   💅 [PostCSS](https://postcss.org) for processing [Tailwind CSS](https://tailwindcss.com)
 -   ⚡️ Lazy load images with [lazysizes](https://github.com/aFarkas/lazysizes)
--   ✨ Compress image with [Imagemin](https://github.com/imagemin/imagemin)
+-   ✨ Compress image with [Squoosh](https://github.com/GoogleChromeLabs/squoosh)
 -   🎈 Syntax Highlighting with [Prism.js](https://prismjs.com)
 -   ☕ Minify HTML & CSS with [HTMLMinifier](https://www.npmjs.com/package/html-minifier) and [cssnano](https://cssnano.co)
 -   ✏️ Linter with [ESLint](https://eslint.org)
 -   🛠 Code Formatter with [Prettier](https://prettier.io)
 -   💨 Live reload
--   📦 Module Bundler with [Webpack](https://webpack.js.org)
+-   📦 Module Bundler with [Snowpack](https://www.snowpack.dev/)
 -   🦊 Templating with <!--[EJS](https://ejs.co) and--> [NJK](https://mozilla.github.io/nunjucks/templating.html)
 -   🤖 SEO metadata and [Open Graph](https://ogp.me/) tags
 -   ⚙️ [JSON-LD](https://developers.google.com/search/docs/guides/intro-structured-data) for richer indexing
@@ -109,6 +97,10 @@ Production-ready in mind:
 -   💯 Maximize lighthouse score
 -   🌈 Include a FREE minimalist blog theme
 <!-- -   🗒 Netlify CMS (optional) -->
+
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 

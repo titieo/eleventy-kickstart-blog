@@ -2,11 +2,9 @@ module.exports = {
     mode: 'jit',
     purge: {
         content: [
-            './src/**/*.html',
-            './src/**/*.ejs',
-            './src/**/*.njk',
-            './src/**/*.md',
-            './src/**/*.js',
+            './public/**/*.html',
+            './public/**/*.css',
+            './public/**/*.js',
         ],
         options: {
             keyframes: true,
