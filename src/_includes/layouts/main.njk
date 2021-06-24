@@ -1,0 +1,22 @@
+---
+layout: layouts/head.ejs
+---
+{% if build.env == "production" %}
+{# Add any CSS from the main script #}
+{% viteLinkStylesheetTags "src/index.js" %}
+{% viteLinkModulePreloadTags "src/index.js" %}
+{% endif %}
+</head>
+<body>
+	{{ content | safe }}
+{% if build.env == "production" %}
+{# We must read the production scripts from the Vite manifest. We defer that logic to a custom shortcode #}
+{% viteScriptTag "src/index.js" %}
+{% viteLegacyScriptTag "vite/legacy-polyfills" %}
+{% viteLegacyScriptTag "src/main-legacy.js" %}
+    {% else %}
+<script type="module" src="http://localhost:3000/@vite/client"></script>
+<script type="module" src="http://localhost:3000/src/index.js"></script>
+    {% endif %}
+    </body>
+</html>

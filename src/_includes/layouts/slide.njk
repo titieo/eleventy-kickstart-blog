@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<%= site.locale %>">
+<html lang="{{ site.locale }}">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,24 +18,24 @@
             href="/favicon-16x16.png"
         />
         <link rel="icon" href="/favicon.ico" /> -->
-        <title><%= title %></title>
+        <title>{{ title }}</title>
         <meta
             name="description"
-            content="<%= (!!locals.description) ? description : site.description %>"
+            content="{{ description if (!!locals.description) else site.description }}"
         />
-        <meta name="author" content="<%= site.author %>" />
-        <meta property="og:title" content="<%= title %>" />
+        <meta name="author" content="{{ site.author }}" />
+        <meta property="og:title" content="{{ title }}" />
         <meta
             property="og:description"
-            content="<%= (!!locals.description) ? description : site.description %>"
+            content="{{ description if (!!locals.description) else site.description }}"
         />
-        <meta property="og:locale" content="<%= site.locale %>" />
-        <meta property="og:site_name" content="<%= site.site_name %>" />
-        <% if (locals.tags == "posts") { %>
+        <meta property="og:locale" content="{{ site.locale }}" />
+        <meta property="og:site_name" content="{{ site.site_name }}" />
+        <% if (locals.tags == "posts") { }}
         <meta property="og:type" content="article" />
         <meta
             property="article:published_time"
-            content="<%= date.toISOString() %>"
+            content="{{ date.toISOString() }}"
         />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta
@@ -44,28 +44,28 @@
         />
         <script type="application/ld+json">
             {
-                "description": "<%= (!!locals.description) ? description : site.description %>",
-                "author": { "@type": "Person", "name": "<%= site.author %>" },
+                "description": "{{ description if (!!locals.description) else site.description }}",
+                "author": { "@type": "Person", "name": "{{ site.author }}" },
                 "@type": "BlogPosting",
-                "url": "<%= `${site.url}${page.url}` %>",
+                "url": "{{ `${site.url}${page.url}` }}",
                 "publisher": {
                     "@type": "Organization",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "<%= `${site.url}/img/logo.png` %>"
+                        "url": "{{ `${site.url}/img/logo.png` }}"
                     },
-                    "name": "<%= site.author %>"
+                    "name": "{{ site.author }}"
                 },
-                "headline": "<%= title %>",
-                "datePublished": "<%= date.toISOString() %>",
+                "headline": "{{ title }}",
+                "datePublished": "{{ date.toISOString() }}",
                 "mainEntityOfPage": {
                     "@type": "WebPage",
-                    "@id": "<%= `${site.url}${page.url}` %>"
+                    "@id": "{{ `${site.url}${page.url}` }}"
                 },
                 "@context": "http://schema.org"
             }
         </script>
-        <% } %>
+        <% } }}
         <link rel="stylesheet" href="/slide.css" />
     </head>
     <body>

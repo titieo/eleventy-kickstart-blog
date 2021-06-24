@@ -2,4 +2,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import 'overlayscrollbars/css/OverlayScrollbars.min.css';
-@import './main.css';
+html {
+    scroll-behavior: smooth;
+}

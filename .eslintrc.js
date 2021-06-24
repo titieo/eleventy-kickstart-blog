@@ -5,11 +5,11 @@ module.exports = {
         es2021: true,
         node: true,
     },
-    extends: ['standard'],
+    extends: ['standard','prettier'],
     parserOptions: {
         ecmaVersion: 12,
     },
-    plugins: ['html', '@babel', 'prettier'],
+    plugins: ['html', '@babel'],
     rules: {
         quotes: ['error', 'single'],
     },

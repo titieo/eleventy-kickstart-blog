@@ -24,3 +24,5 @@ webpack.html
 ######################
 src/lib
 *.min.js
+website
+website/

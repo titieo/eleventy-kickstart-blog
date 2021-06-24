@@ -97,6 +97,8 @@ public/
 build
 .snowpack
 
+# 11ty and vite
+website/
 
 # Electron-Forge
 out/
