@@ -1,1 +1,3 @@
-{ "layout": "slide.njk" }
+{
+  "layout": "slide.njk"
+}
