@@ -40,6 +40,7 @@ export default defineConfig({
         }),
     ],
     publicDir: 'static',
+    base: '/eleventy-kickstart-blog/',
     build: {
         // This is important: Generate directly to _site and then assetsDir.
         // You could opt to build in an intermediate directory,
