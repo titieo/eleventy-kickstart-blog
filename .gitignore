@@ -94,6 +94,8 @@ typings/
 
 # Snowpack
 public/
+build
+.snowpack
 
 
 # Electron-Forge

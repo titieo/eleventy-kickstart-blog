@@ -18,7 +18,7 @@
         }
     },
     "scripts": {
-        "build": "cross-env TAILWIND_DISABLE_TOUCH=true  NODE_ENV=production snowpack build",
+        "build": "cross-env TAILWIND_DISABLE_TOUCH=true NODE_ENV=production rimraf build && snowpack build",
         "clean": "rimraf public",
         "cz": "git add . && git-cz && git push origin snowpack",
         "debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy --dryrun",
