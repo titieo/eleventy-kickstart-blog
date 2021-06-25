@@ -22,7 +22,7 @@ const OUTPUT_DIR = 'website';
 
 // This will change both Eleventy's pathPrefix, and the one output by the
 // vite-related shortcodes below. Double-check if you change this, as this is only a demo :)
-const PATH_PREFIX = '/eleventy-kickstart-blog/';
+const PATH_PREFIX = '/';
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.setQuietMode(isDev);

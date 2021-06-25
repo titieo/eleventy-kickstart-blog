@@ -30,7 +30,7 @@ jobs:
               uses: JamesIves/github-pages-deploy-action@4.1.4
               if: ${{ github.event_name == 'push'}}
               with:
-                  branch: gh-pages
+                  branch: result
                   folder: website
     lint:
         name: Lint
