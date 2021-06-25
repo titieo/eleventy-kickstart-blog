@@ -18,7 +18,7 @@
         }
     },
     "scripts": {
-        "build": "yarn build:eleventy && yarn build:vite",
+        "build": "yarn build:vite && yarn build:eleventy",
         "build-dev": "build && vite preview",
         "build:eleventy": "NODE_ENV=production eleventy",
         "build:vite": "NODE_ENV=production vite build",
