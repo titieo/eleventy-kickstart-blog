@@ -1,5 +1,5 @@
 /* eslint-disable array-callback-return */
-import elasticlunr from 'elasticlunr';
+// import elasticlunr from 'elasticlunr';
 ((window, document) => {
     'use strict';
 
