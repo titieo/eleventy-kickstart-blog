@@ -2,38 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>https://eleventy-kickstart-blog.vercel.app//content/posts/hi/</loc>
-            <lastmod>2021-06-25T09:56:56.870Z</lastmod>
+            <loc>/content/posts/hi/</loc>
+            <lastmod>2021-06-25T13:21:35.940Z</lastmod>
         </url>
     
         <url>
-            <loc>https://eleventy-kickstart-blog.vercel.app//</loc>
-            <lastmod>2021-06-25T09:56:56.870Z</lastmod>
+            <loc>/content/posts/</loc>
+            <lastmod>2021-06-25T13:21:35.940Z</lastmod>
         </url>
     
         <url>
-            <loc>https://eleventy-kickstart-blog.vercel.app//search-index.json</loc>
-            <lastmod>2021-06-25T09:56:56.870Z</lastmod>
+            <loc>/content/slides/</loc>
+            <lastmod>2021-06-25T13:21:35.940Z</lastmod>
         </url>
     
         <url>
-            <loc>https://eleventy-kickstart-blog.vercel.app//tags/</loc>
-            <lastmod>2021-06-25T09:56:56.870Z</lastmod>
+            <loc>/</loc>
+            <lastmod>2021-06-25T13:21:35.940Z</lastmod>
         </url>
     
         <url>
-            <loc>https://eleventy-kickstart-blog.vercel.app//tags/allslides/</loc>
-            <lastmod>2021-06-25T09:56:56.870Z</lastmod>
+            <loc>/tags/</loc>
+            <lastmod>2021-06-25T13:21:35.940Z</lastmod>
         </url>
     
         <url>
-            <loc>https://eleventy-kickstart-blog.vercel.app//tags/allposts/</loc>
-            <lastmod>2021-06-25T09:56:56.870Z</lastmod>
+            <loc>/tags/allslides/</loc>
+            <lastmod>2021-06-25T13:21:35.940Z</lastmod>
         </url>
     
         <url>
-            <loc>https://eleventy-kickstart-blog.vercel.app//tags/allpages/</loc>
-            <lastmod>2021-06-25T09:56:56.870Z</lastmod>
+            <loc>/tags/allposts/</loc>
+            <lastmod>2021-06-25T13:21:35.940Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/tags/allpages/</loc>
+            <lastmod>2021-06-25T13:21:35.940Z</lastmod>
         </url>
     
 </urlset>

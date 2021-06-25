@@ -1,2 +1,0 @@
-
-{"version":"0.9.5","fields":["title","excerpt","genres"],"ref":"id","documentStore":{"docs":{"/content/posts/hi/":{"id":"/content/posts/hi/","title":"demo"}},"docInfo":{"/content/posts/hi/":{"title":1,"excerpt":0,"genres":0}},"length":1,"save":true},"index":{"title":{"root":{"docs":{},"df":0,"d":{"docs":{},"df":0,"e":{"docs":{},"df":0,"m":{"docs":{},"df":0,"o":{"docs":{"/content/posts/hi/":{"tf":1}},"df":1}}}}}},"excerpt":{"root":{"docs":{},"df":0}},"genres":{"root":{"docs":{},"df":0}}},"pipeline":["trimmer","stopWordFilter","stemmer"]}
