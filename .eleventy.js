@@ -13,8 +13,9 @@ const htmlmin = require('html-minifier');
 const moment = require('moment');
 const fs = require('fs/promises');
 const path = require('path');
+const searchFilter = require('./src/filters/searchFilter');
 
-moment.locale('en');
+moment.locale();
 
 const INPUT_DIR = 'src';
 const OUTPUT_DIR = 'website';
@@ -174,6 +175,7 @@ module.exports = function (eleventyConfig) {
         return moment(date).toISOString();
     });
 
+    eleventyConfig.addFilter('search', searchFilter);
     eleventyConfig.addFilter('dateReadable', (date) => {
         return moment(date).utc().format('LL'); // E.g. May 31, 2019
     });

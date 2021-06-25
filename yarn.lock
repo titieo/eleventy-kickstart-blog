@@ -5991,6 +5991,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"elasticlunr@npm:^0.9.5":
+  version: 0.9.5
+  resolution: "elasticlunr@npm:0.9.5"
+  checksum: 402de9070f3b0752ca7f6ae3f8ed4b41d23e99fa81b6fb94ecfdbe52d9fb3f24ccde040ebd6abd8f8f98e83c663e92f494b2caeda05fbdd163f09a2f4f99d5c0
+  languageName: node
+  linkType: hard
+
 "electron-to-chromium@npm:^1.3.723":
   version: 1.3.749
   resolution: "electron-to-chromium@npm:1.3.749"
@@ -7247,6 +7254,7 @@ __metadata:
     cross-env: ^7.0.3
     cssnano: ^5.0.6
     daisyui: ^1.4.0
+    elasticlunr: ^0.9.5
     eleventy-plugin-blog-tools: ^0.3.1
     eleventy-plugin-lazyimages: ^2.1.0
     eleventy-plugin-reader-bar: ^0.2.0

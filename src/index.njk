@@ -4,3 +4,11 @@ layout: home
 ---
 
 {% set postslist = collections.allPages %} {% include "postslist.njk" %}
+<div class="field">
+  <label for="searchField">Search</label>
+  <input type="search" placeholder="Search..." id="searchField" />
+</div>
+<ol id="searchResults" />
+<div id="noResultsFound" style="display: none">
+  <p>No results found.</p>
+</div>

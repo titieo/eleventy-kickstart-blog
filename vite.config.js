@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import viteImagemin from 'vite-plugin-imagemin';
 import legacy from '@vitejs/plugin-legacy';
-const isDev = import.meta.env.DEV;
+const isDev = process.env.NODE_ENV === 'development';
 // https://vitejs.dev/config/
 export default defineConfig({
     // This is not critical, but I include it because there are more HTML transforms via plugins, that templates must handle
