@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import viteImagemin from 'vite-plugin-imagemin';
 import legacy from '@vitejs/plugin-legacy';
-
+const isDev = import.meta.env.DEV;
 // https://vitejs.dev/config/
 export default defineConfig({
     // This is not critical, but I include it because there are more HTML transforms via plugins, that templates must handle
@@ -51,7 +51,7 @@ export default defineConfig({
         // This can help you set cache headers for hashed output more easily.
         // assetsDir: "assets",
         // Sourcemaps are nice, but not critical for this to work
-        sourcemap: true,
+        sourcemap: isDev,
         // This is critical: generate manifest.json in outDir
         manifest: true,
         rollupOptions: {
