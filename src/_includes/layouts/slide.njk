@@ -1,81 +1,23 @@
-<!DOCTYPE html>
-<html lang="{{ site.locale }}">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/favicon-16x16.png"
-        />
-        <link rel="icon" href="/favicon.ico" /> -->
-        <title>{{ title }}</title>
-        <meta
-            name="description"
-            content="{{ description if (!!locals.description) else site.description }}"
-        />
-        <meta name="author" content="{{ site.author }}" />
-        <meta property="og:title" content="{{ title }}" />
-        <meta
-            property="og:description"
-            content="{{ description if (!!locals.description) else site.description }}"
-        />
-        <meta property="og:locale" content="{{ site.locale }}" />
-        <meta property="og:site_name" content="{{ site.site_name }}" />
-        <% if (locals.tags == "posts") { }}
-        <meta property="og:type" content="article" />
-        <meta
-            property="article:published_time"
-            content="{{ date.toISOString() }}"
-        />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta
-            name="apple-mobile-web-app-status-bar-style"
-            content="black-translucent"
-        />
-        <script type="application/ld+json">
-            {
-                "description": "{{ description if (!!locals.description) else site.description }}",
-                "author": { "@type": "Person", "name": "{{ site.author }}" },
-                "@type": "BlogPosting",
-                "url": "{{ `${site.url}${page.url}` }}",
-                "publisher": {
-                    "@type": "Organization",
-                    "logo": {
-                        "@type": "ImageObject",
-                        "url": "{{ `${site.url}/img/logo.png` }}"
-                    },
-                    "name": "{{ site.author }}"
-                },
-                "headline": "{{ title }}",
-                "datePublished": "{{ date.toISOString() }}",
-                "mainEntityOfPage": {
-                    "@type": "WebPage",
-                    "@id": "{{ `${site.url}${page.url}` }}"
-                },
-                "@context": "http://schema.org"
-            }
-        </script>
-        <% } }}
-        <link rel="stylesheet" href="/slide.css" />
-    </head>
-    <body>
-        {{ content | safe }}
-        <script
-            src="/slide.js"
-            crossorigin="anonymous"
-            async
-            type="module"
-        ></script>
+---
+layout: layouts/head.ejs
+---
+{% if build.env == "production" %}
+{# Add any CSS from the main script #}
+{% viteLinkStylesheetTags "src/slide.js" %}
+{% viteLinkModulePreloadTags "src/slide.js" %}
+{% endif %}
+</head>
+<body>
+    {{ content | safe }}
+    {% if build.env == "production" %}
+{# We must read the production scripts from the Vite manifest. We defer that logic to a custom shortcode #}
+{% viteScriptTag "src/slide.js" %}
+{% viteLegacyScriptTag "vite/legacy-polyfills" %}
+{% viteLegacyScriptTag "src/main-legacy.js" %}
+    {% else %}
+<script type="module" src="http://localhost:3000/@vite/client"></script>
+<script type="module" src="http://localhost:3000/src/index.js"></script>
+    {% endif %}
         <script>
             // https://revealjs.com/initialization/
             Reveal.initialize({
@@ -145,5 +87,5 @@
                 ],
             });
         </script>
-    </body>
-</html>
+  </body>
+
