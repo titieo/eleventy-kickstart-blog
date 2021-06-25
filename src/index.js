@@ -7,7 +7,7 @@ import './scripts/scrollBar';
 import Alpine from 'alpinejs';
 import { themeChange } from 'theme-change';
 
-import.meta.glob('./dir/*.js');
+import.meta.glob('./scripts/*.js');
 
 window.Alpine = Alpine;
 Alpine.start();
