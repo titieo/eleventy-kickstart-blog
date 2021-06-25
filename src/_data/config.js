@@ -1,11 +1,5 @@
 module.export = {
-    site_name: 'Starter',
-    title: 'Eleventy Starter Boilerplate',
-    description: 'Starter code for your 11ty blog Boilerplate',
-    url: 'https://example.com',
-    locale: 'en',
-    author: 'Anonymous',
-    nav: [
+    navs: [
         {
             link: 'https://tailwindcss.com/',
             content: 'TailwindCSS',

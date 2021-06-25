@@ -2,6 +2,28 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import 'overlayscrollbars/css/OverlayScrollbars.min.css';
+@import './okaidia.css';
+
 html {
     scroll-behavior: smooth;
+}
+h1,
+h2,
+h3 {
+    @apply capitalize font-serif font-bold;
+}
+h1 {
+    @apply text-3xl;
+}
+h2 {
+    @apply text-2xl;
+}
+h3 {
+    @apply text-xl;
+}
+p {
+    @apply font-sans;
+}
+main {
+    @apply py-10 px-5;
 }

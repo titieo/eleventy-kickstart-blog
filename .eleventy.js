@@ -13,7 +13,7 @@ const htmlmin = require('html-minifier');
 const moment = require('moment');
 const fs = require('fs/promises');
 const path = require('path');
-const searchFilter = require('./src/filters/searchFilter');
+const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 
 moment.locale();
 
@@ -30,6 +30,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(pluginRss);
     eleventyConfig.addPlugin(pluginSyntaxHighlight);
     eleventyConfig.addPlugin(pluginNavigation);
+    eleventyConfig.addPlugin(inclusiveLangPlugin);
     eleventyConfig.addPlugin(readerBar);
     eleventyConfig.addPlugin(blogTools);
     eleventyConfig.addPlugin(lazyImagesPlugin, {
@@ -174,8 +175,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter('dateIso', (date) => {
         return moment(date).toISOString();
     });
-
-    eleventyConfig.addFilter('search', searchFilter);
     eleventyConfig.addFilter('dateReadable', (date) => {
         return moment(date).utc().format('LL'); // E.g. May 31, 2019
     });

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const listOfLightThemes = [
     'light',
     'cupcake',
@@ -13,10 +14,6 @@ const listOfLightThemes = [
     'fantasy',
     'wireframe',
 ];
-const themeMode = document
-    .getElementsByTagName('html')[0]
-    .getAttribute('data-theme');
-
 const getTheme = () => {
     const selectedTheme = document.querySelector('[data-choose-theme]').value;
     const theme =

@@ -4,8 +4,9 @@ tags: post
 ---
 </head>
 <body>
-  <h1>{{ title }}</h1>
-  <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
+  <img src="{{ img }}" class="mx-auto w-full px-5 rounded-btn m-5">
+  <h1 class="pt-10 px-5">{{ title }}</h1>
+  <time class="px-5" datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
   <main>
     {{ content | safe }}
   </main>

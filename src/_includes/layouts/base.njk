@@ -1,7 +1,8 @@
 ---
 layout: layouts/main.njk
 ---
-<div class="h-screen bg-base-200 drawer text-base-content">
+{# {% readerBar %} #}
+<div class="h-screen bg-base-200 drawer text-base-content reader-bar-start">
     <!-- this checkbox controls if drawer is open -->
     <input id="menu-drawer" type="checkbox" class="drawer-toggle" />
     <div class="flex flex-col drawer-content">
@@ -9,10 +10,7 @@ layout: layouts/main.njk
         <div class="w-full navbar bg-base-300">
             <!-- hamburger menu is only visible on mobile -->
             <div class="flex-none lg:hidden">
-                <label
-                    for="menu-drawer"
-                    class="btn btn-square btn-ghost"
-                >
+                <label for="menu-drawer" class="btn btn-square btn-ghost">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -28,32 +26,32 @@ layout: layouts/main.njk
                     </svg>
                 </label>
             </div>
-            <div class="flex-1 px-2 mx-2 font-bold">
+            {# <div class="flex-1 px-2 mx-2 font-bold"> #}
                 <!-- navbar title -->
-                <span>{{ sitename }}</span>
-            </div>
+                <a href="/" class="flex-1 px-2 mx-2 font-bold"><span>{{ site.title }}</span></a>
+            {# </div> #}
             <div class="flex-none">
                 <!-- navbar is only visible for desktop -->
                 <div class="hidden lg:inline-block">
                     <ul class="mr-2 space-x-2 menu horizontal">
-                    {%- for nav in navs -%}
+                        {%- for nav in navs -%}
                         <li>
-                        <a target="_blank" class="rounded-btn" href="{{ nav.link }}"
-                    >{{ nav.content }}</a
-                    >
-                </li>
-                {%- endfor -%}
+                            <a
+                                target="_blank"
+                                class="rounded-btn flex justify-items-end"
+                                href="{{ nav.link }}"
+                                >
+                                <i class="{{ nav.icon }}"></i>
+                                <span class="ml-2">{{ nav.content }}</span>
+                                </a
+                            >
+                        </li>
+                        {%- endfor -%}
                     </ul>
                 </div>
-                <select
-                    class="select"
-                    onchange="changed()"
-                    data-choose-theme
-                >
+                <select class="select" onchange="changed()" data-choose-theme>
                     {% for theme in themes %}
-                      <option
-                            value="{{ theme.id }}"
-                      >{{ theme.name }}</option>
+                    <option value="{{ theme.id }}">{{ theme.name }}</option>
                     {% endfor %}
                 </select>
             </div>
@@ -65,13 +63,19 @@ layout: layouts/main.njk
     <div class="drawer-side">
         <label for="menu-drawer" class="drawer-overlay"></label>
         <ul class="p-4 overflow-y-auto menu w-80 bg-base-100">
-        {%- for nav in navs -%}
-            <li>
-                <a target="_blank" href="{{ nav.link }}"
-                    >{{ nav.content }}</a
-                >
-            </li>
-        {%- endfor -%}
+            {%- for nav in navs -%}
+              <li>
+                <a
+                  target="_blank"
+                  class="rounded-btn flex justify-items-end"
+                  href="{{ nav.link }}"
+                  >
+                  <i class="{{ nav.icon }}"></i>
+                  <span class="ml-2">{{ nav.content }}</span>
+                  </a
+                  >
+              </li>
+            {%- endfor -%}
         </ul>
     </div>
 </div>

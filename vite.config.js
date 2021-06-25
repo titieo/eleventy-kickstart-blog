@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite';
-import viteImagemin from 'vite-plugin-imagemin';
 import legacy from '@vitejs/plugin-legacy';
 const isDev = process.env.NODE_ENV === 'development';
 // https://vitejs.dev/config/
@@ -7,38 +6,7 @@ export default defineConfig({
     // This is not critical, but I include it because there are more HTML transforms via plugins, that templates must handle
     // TODO: For legacy() to work without a hitch, we set a known @babel/standalone version in package.json
     // Remove that once https://github.com/vitejs/vite/issues/2442 is fixed
-    plugins: [
-        legacy(),
-        viteImagemin({
-            gifsicle: {
-                optimizationLevel: 7,
-                interlaced: false,
-            },
-            optipng: {
-                optimizationLevel: 7,
-            },
-            webp: {
-                quality: 85,
-            },
-            mozjpeg: {
-                quality: 85,
-            },
-            pngquant: {
-                quality: [0.65, 0.9],
-                speed: 4,
-            },
-            svgo: {
-                plugins: [
-                    {
-                        removeViewBox: false,
-                    },
-                    {
-                        removeEmptyAttrs: false,
-                    },
-                ],
-            },
-        }),
-    ],
+    plugins: [legacy()],
     publicDir: 'static',
     base: '/',
     build: {
