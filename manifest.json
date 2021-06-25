@@ -1,0 +1,32 @@
+{
+  "src/index-legacy.js": {
+    "file": "assets/index-legacy.ac5d02e5.js",
+    "src": "src/index-legacy.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor-legacy.9e757c9d.js"
+    ]
+  },
+  "_vendor-legacy.9e757c9d.js": {
+    "file": "assets/vendor-legacy.9e757c9d.js"
+  },
+  "vite/legacy-polyfills": {
+    "file": "assets/polyfills-legacy.0c04d188.js",
+    "src": "vite/legacy-polyfills",
+    "isEntry": true
+  },
+  "src/index.js": {
+    "file": "assets/index.8b45b430.js",
+    "src": "src/index.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor.9243a557.js"
+    ],
+    "css": [
+      "assets/index.45a2b41a.css"
+    ]
+  },
+  "_vendor.9243a557.js": {
+    "file": "assets/vendor.9243a557.js"
+  }
+}
