@@ -83,7 +83,7 @@ Production-ready in mind:
     [Tailwind CSS](https://tailwindcss.com)
 -   ⚡️ Lazy load images with [lazysizes](https://github.com/aFarkas/lazysizes)
 -   ✨ Compress image with
-    [Squoosh](https://github.com/GoogleChromeLabs/squoosh)
+    [Squoosh](https://github.com/GoogleChromeLabs/squoosh) (by running `yarn min`)
 -   🎈 Syntax Highlighting with [Prism.js](https://prismjs.com)
 -   ☕ Minify HTML & CSS with
     [HTMLMinifier](https://www.npmjs.com/package/html-minifier) and
@@ -92,7 +92,7 @@ Production-ready in mind:
 -   🛠 Code Formatter with [Prettier](https://prettier.io)
 -   💨 Live reload
 -   📦 Module Bundler with [Vite](https://vitejs.dev/)
--   🦊 Templating with <!--[EJS](https://ejs.co) and-->
+-   🦊 Templating with [EJS](https://ejs.co) and
     [NJK](https://mozilla.github.io/nunjucks/templating.html)
 -   🤖 SEO metadata and [Open Graph](https://ogp.me/) tags
 -   ⚙️

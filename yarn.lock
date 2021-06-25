@@ -2529,6 +2529,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@squoosh/lib@npm:^0.3.1":
+  version: 0.3.1
+  resolution: "@squoosh/lib@npm:0.3.1"
+  dependencies:
+    web-streams-polyfill: ^3.0.3
+  checksum: a11dda9565294f3f10d8d77cc3975f98752f6440df2f50e6a80b7f297668687823249fe93aee460f73722c1f16863ed51c3f8347e27ded78b7ebba6620865631
+  languageName: node
+  linkType: hard
+
 "@stylelint/postcss-css-in-js@npm:^0.37.2":
   version: 0.37.2
   resolution: "@stylelint/postcss-css-in-js@npm:0.37.2"
@@ -7247,6 +7256,7 @@ __metadata:
     "@commitlint/config-conventional": ^12.1.4
     "@fortawesome/fontawesome-free": ^5.15.3
     "@picgo/bump-version": ^1.1.0
+    "@squoosh/lib": ^0.3.1
     "@vitejs/plugin-legacy": ^1.4.2
     alpinejs: ^3.1.1
     autoprefixer: ^10.2.6
@@ -16464,6 +16474,13 @@ __metadata:
   dependencies:
     defaults: ^1.0.3
   checksum: abf8ba432dd19a95af63895de6af932900a9451e175745551aeca0fd2d46604bc72ff80aa83adc3f67fb8389191329340e2864aefcf20655ffe91f0dbee5d953
+  languageName: node
+  linkType: hard
+
+"web-streams-polyfill@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "web-streams-polyfill@npm:3.0.3"
+  checksum: e7e0bc4410d89b29a7cece265a907b597ba8dd1681f497efd7c418cfde51d2ef5197310d0b3bcf291262da364a17846eb90c48857c4697c07e31a282a8aaba5a
   languageName: node
   linkType: hard
 
