@@ -1,6 +1,6 @@
 <!--
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** cokaps016, eleventy-kickstart-blog, twitter_handle, cokaps016@icloud.com, Frontend Template, project_description
+*** loctran016, eleventy-kickstart-blog, twitter_handle, loctran016@icloud.com, Frontend Template, project_description
 -->
 
 <!-- PROJECT SHIELDS -->
@@ -22,7 +22,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/cokaps016/eleventy-kickstart-blog">
+  <a href="https://github.com/loctran016/eleventy-kickstart-blog">
     <img src="logo.jpg" alt="Logo" width="80" height="80">
   </a>
 
@@ -31,9 +31,9 @@
   <p align="center">
     Frontend Template
     <br />
-    <a href="https://github.com/cokaps016/eleventy-kickstart-blog/issues">eleventy-kickstart-blogrt Bug</a>
+    <a href="https://github.com/loctran016/eleventy-kickstart-blog/issues">eleventy-kickstart-blogrt Bug</a>
     ·
-    <a href="https://github.com/cokaps016/eleventy-kickstart-blog/issues">Request Feature</a>
+    <a href="https://github.com/loctran016/eleventy-kickstart-blog/issues">Request Feature</a>
   </p>
 </p>
 
@@ -91,7 +91,7 @@ Production-ready in mind:
 -   ✏️ Linter with [ESLint](https://eslint.org)
 -   🛠 Code Formatter with [Prettier](https://prettier.io)
 -   💨 Live reload
--   📦 Module Bundler with [Snowpack](https://www.snowpack.dev/)
+-   📦 Module Bundler with [Vite](https://vitejs.dev/)
 -   🦊 Templating with <!--[EJS](https://ejs.co) and-->
     [NJK](https://mozilla.github.io/nunjucks/templating.html)
 -   🤖 SEO metadata and [Open Graph](https://ogp.me/) tags
@@ -126,7 +126,7 @@ install them.
 1. Clone the eleventy-kickstart-blog
 
     ```sh
-    git clone https://github.com/cokaps016/eleventy-kickstart-blog.git
+    git clone https://github.com/loctran016/eleventy-kickstart-blog.git
     ```
 
 2. Install NPM packages
@@ -146,7 +146,7 @@ to more resources.
 ## Roadmap
 
 See the
-[open issues](https://github.com/cokaps016/eleventy-kickstart-blog/issues) for a
+[open issues](https://github.com/loctran016/eleventy-kickstart-blog/issues) for a
 list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
@@ -173,10 +173,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-cokaps016 - [@cokaps016](https://twitter.com/cokaps016) - cokaps016@icloud.com
+loctran016 - [@loctran016](https://twitter.com/loctran016) - loctran016@icloud.com
 
 Project Link:
-[https://github.com/cokaps016/eleventy-kickstart-blog](https://github.com/cokaps016/eleventy-kickstart-blog)
+[https://github.com/loctran016/eleventy-kickstart-blog](https://github.com/loctran016/eleventy-kickstart-blog)
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -188,13 +188,13 @@ Project Link:
     <!-- MARKDOWN LINKS & IMAGES -->
     <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/cokaps016/eleventy-kickstart-blog.svg?style=for-the-badge
-[contributors-url]: https://github.com/cokaps016/eleventy-kickstart-blog/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/cokaps016/eleventy-kickstart-blog.svg?style=for-the-badge
-[forks-url]: https://github.com/cokaps016/eleventy-kickstart-blog/network/members
-[stars-shield]: https://img.shields.io/github/stars/cokaps016/eleventy-kickstart-blog.svg?style=for-the-badge
-[stars-url]: https://github.com/cokaps016/eleventy-kickstart-blog/stargazers
-[issues-shield]: https://img.shields.io/github/issues/cokaps016/eleventy-kickstart-blog.svg?style=for-the-badge
-[issues-url]: https://github.com/cokaps016/eleventy-kickstart-blog/issues
-[license-shield]: https://img.shields.io/github/license/cokaps016/eleventy-kickstart-blog.svg?style=for-the-badge
-[license-url]: https://github.com/cokaps016/eleventy-kickstart-blog/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/loctran016/eleventy-kickstart-blog.svg?style=for-the-badge
+[contributors-url]: https://github.com/loctran016/eleventy-kickstart-blog/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/loctran016/eleventy-kickstart-blog.svg?style=for-the-badge
+[forks-url]: https://github.com/loctran016/eleventy-kickstart-blog/network/members
+[stars-shield]: https://img.shields.io/github/stars/loctran016/eleventy-kickstart-blog.svg?style=for-the-badge
+[stars-url]: https://github.com/loctran016/eleventy-kickstart-blog/stargazers
+[issues-shield]: https://img.shields.io/github/issues/loctran016/eleventy-kickstart-blog.svg?style=for-the-badge
+[issues-url]: https://github.com/loctran016/eleventy-kickstart-blog/issues
+[license-shield]: https://img.shields.io/github/license/loctran016/eleventy-kickstart-blog.svg?style=for-the-badge
+[license-url]: https://github.com/loctran016/eleventy-kickstart-blog/blob/master/LICENSE.txt
