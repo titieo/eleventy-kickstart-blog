@@ -13,7 +13,7 @@ layout: layouts/head.ejs
 {# We must read the production scripts from the Vite manifest. We defer that logic to a custom shortcode #}
 {% viteScriptTag "src/index.js" %}
 {% viteLegacyScriptTag "vite/legacy-polyfills" %}
-{% viteLegacyScriptTag "src/main-legacy.js" %}
+{% viteLegacyScriptTag "src/index-legacy.js" %}
     {% else %}
 <script type="module" src="http://localhost:3000/@vite/client"></script>
 <script type="module" src="http://localhost:3000/src/index.js"></script>
