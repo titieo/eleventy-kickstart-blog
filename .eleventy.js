@@ -132,7 +132,7 @@ module.exports = function (eleventyConfig) {
 
         // TODO: Consider caching this call, to avoid going to the filesystem every time
         const manifest = await fs.readFile(
-            path.resolve(process.cwd(), '_site', 'manifest.json'),
+            path.resolve(process.cwd(), 'website', 'manifest.json'),
         );
         const parsed = JSON.parse(manifest);
 
@@ -144,7 +144,7 @@ module.exports = function (eleventyConfig) {
                 .map((chunk) => `"${chunk.src}"`)
                 .join(`, `);
             throw new Error(
-                `No entry for ${entryFilename} found in _site/manifest.json. Valid entries in manifest: ${possibleEntries}`,
+                `No entry for ${entryFilename} found in website/manifest.json. Valid entries in manifest: ${possibleEntries}`,
             );
         }
 
