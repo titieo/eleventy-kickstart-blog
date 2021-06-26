@@ -2,43 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>/content/posts/hi/</loc>
-            <lastmod>2021-06-25T13:21:35.940Z</lastmod>
+            <loc>/content/posts/</loc>
+            <lastmod>2021-06-26T02:32:05.258Z</lastmod>
         </url>
     
         <url>
-            <loc>/content/posts/</loc>
-            <lastmod>2021-06-25T13:21:35.940Z</lastmod>
+            <loc>/content/posts/markdown/</loc>
+            <lastmod>2021-06-26T02:32:05.258Z</lastmod>
         </url>
     
         <url>
             <loc>/content/slides/</loc>
-            <lastmod>2021-06-25T13:21:35.940Z</lastmod>
+            <lastmod>2021-06-26T02:32:05.258Z</lastmod>
         </url>
     
         <url>
             <loc>/</loc>
-            <lastmod>2021-06-25T13:21:35.940Z</lastmod>
+            <lastmod>2021-06-26T02:32:05.258Z</lastmod>
         </url>
     
         <url>
             <loc>/tags/</loc>
-            <lastmod>2021-06-25T13:21:35.940Z</lastmod>
+            <lastmod>2021-06-26T02:32:05.258Z</lastmod>
         </url>
     
         <url>
             <loc>/tags/allslides/</loc>
-            <lastmod>2021-06-25T13:21:35.940Z</lastmod>
+            <lastmod>2021-06-26T02:32:05.258Z</lastmod>
         </url>
     
         <url>
             <loc>/tags/allposts/</loc>
-            <lastmod>2021-06-25T13:21:35.940Z</lastmod>
+            <lastmod>2021-06-26T02:32:05.258Z</lastmod>
         </url>
     
         <url>
             <loc>/tags/allpages/</loc>
-            <lastmod>2021-06-25T13:21:35.940Z</lastmod>
+            <lastmod>2021-06-26T02:32:05.258Z</lastmod>
         </url>
     
 </urlset>

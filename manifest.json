@@ -1,6 +1,6 @@
 {
   "src/index-legacy.js": {
-    "file": "assets/index-legacy.e716e886.js",
+    "file": "assets/index-legacy.7d28fa0b.js",
     "src": "src/index-legacy.js",
     "isEntry": true,
     "imports": [
@@ -16,14 +16,14 @@
     "isEntry": true
   },
   "src/index.js": {
-    "file": "assets/index.112364e6.js",
+    "file": "assets/index.78fd6508.js",
     "src": "src/index.js",
     "isEntry": true,
     "imports": [
       "_vendor.9243a557.js"
     ],
     "css": [
-      "assets/index.af4f4ccd.css"
+      "assets/index.e950c414.css"
     ]
   },
   "_vendor.9243a557.js": {
