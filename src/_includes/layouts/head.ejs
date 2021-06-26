@@ -62,13 +62,15 @@ title: A website
             }
         </script>
         <% } %>
+        <% if (build.env == "production") { %>
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SCZ43CPT4H"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WY67STE8P"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-SCZ43CPT4H');
+          gtag('config', 'G-5WY67STE8P');
         </script>
+        <% } %>
         <%- content %>
 </html>
