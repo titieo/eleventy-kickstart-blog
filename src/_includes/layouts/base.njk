@@ -28,7 +28,7 @@ layout: layouts/main.njk
             </div>
             {# <div class="flex-1 px-2 mx-2 font-bold"> #}
                 <!-- navbar title -->
-                <a href="/" class="flex-1 px-2 mx-2 font-bold"><span>{{ site.title }}</span></a>
+                <header><a href="/" class="flex-1 px-2 mx-2 font-bold" title="site.title"><span>{{ site.title }}</span></a></header>
             {# </div> #}
             <div class="flex-none">
                 <!-- navbar is only visible for desktop -->
@@ -40,6 +40,7 @@ layout: layouts/main.njk
                                 target="_blank"
                                 class="rounded-btn flex justify-items-end"
                                 href="{{ nav.link }}"
+                                title="Title"
                                 >
                                 <i class="{{ nav.icon }}"></i>
                                 <span class="ml-2">{{ nav.content }}</span>
@@ -69,6 +70,7 @@ layout: layouts/main.njk
                   target="_blank"
                   class="rounded-btn flex justify-items-end"
                   href="{{ nav.link }}"
+                  title="{{nav.content}}"
                   >
                   <i class="{{ nav.icon }}"></i>
                   <span class="ml-2">{{ nav.content }}</span>

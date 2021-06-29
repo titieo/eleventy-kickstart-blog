@@ -1,11 +1,11 @@
 module.exports = [
     {
-        link: 'content/posts/',
+        link: '/content/posts/',
         content: 'Posts',
         icon: 'fas fa-blog',
     },
     {
-        link: 'content/slides/',
+        link: '/content/slides/',
         content: 'Slides',
         icon: 'fab fa-slideshare',
     },

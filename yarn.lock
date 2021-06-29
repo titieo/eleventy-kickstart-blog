@@ -1552,7 +1552,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/standalone@npm:^7.14.6":
+"@babel/standalone@npm:^7.14.7":
   version: 7.14.7
   resolution: "@babel/standalone@npm:7.14.7"
   checksum: 9729d11f5a9a7de8f5f4d1059fe14788467c72f1b33cbeecd360bab4f5695b5999876867c301a6b912cf85e05e3e11073b12be262a840aff4739eb00b063b6c0
@@ -2680,18 +2680,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-legacy@npm:^1.4.2":
-  version: 1.4.2
-  resolution: "@vitejs/plugin-legacy@npm:1.4.2"
+"@vitejs/plugin-legacy@npm:^1.4.3":
+  version: 1.4.3
+  resolution: "@vitejs/plugin-legacy@npm:1.4.3"
   dependencies:
-    "@babel/standalone": ^7.14.6
-    core-js: ^3.14.0
+    "@babel/standalone": ^7.14.7
+    core-js: ^3.15.1
     magic-string: ^0.25.7
     regenerator-runtime: ^0.13.7
     systemjs: ^6.10.1
   peerDependencies:
     vite: ^2.0.0
-  checksum: 451d4371e9f87baf6f93cc1b5825272ea917d311daa29e70ed4c239d9fd37829257005c6f6891ac49e29e5f2aa92a9a8a76ceef5fbfac0724155b4f8619ee9f1
+  checksum: 2529c938468644a631ea92a4fcaef7a7e6da4fc1dc4905319c38947cec21713986f7fa66054bf781fdb04de54abbe21601f62cc9c996441c2edbc7624264ff63
   languageName: node
   linkType: hard
 
@@ -2893,12 +2893,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"alpinejs@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "alpinejs@npm:3.1.1"
+"alpinejs@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "alpinejs@npm:3.2.1"
   dependencies:
     "@vue/reactivity": ^3.0.2
-  checksum: 18ecfb9cead024f838193800fb43fc8bd59ccf5cbf152a2be2a6372029fec15ccbcf8818b2a9d8e4513b025d45a25f591296ea96b8f92970eb4f138868f02af6
+  checksum: b62c94bb1bd7a167909b3e98423bfb7b86d721a4ce785d04b6cbf72403ac2e65c350d4628d42850c3b0a2b71c504992b69d5932cb583465c0ab2eb379c9c2daf
   languageName: node
   linkType: hard
 
@@ -4868,7 +4868,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.14.0":
+"core-js@npm:^3.15.1":
   version: 3.15.1
   resolution: "core-js@npm:3.15.1"
   checksum: 162cc456311d54da079f9bf447a86f626c443f2893a2541fe159b520ec38730c0200fa61c9ce5a3743f450e36024ac754f5c0a2ca22053d60be8b4cfee6c4d2e
@@ -5223,10 +5223,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "daisyui@npm:1.4.0"
-  checksum: 7c37f9f203100aa2986969688ddb20d2e1fe6d113be90bdeaf82d04c0612438a3e1f8e0d7e30ac8d6e0b0d50ee2848339cd964a10cf87d62afa0959932cb0a8d
+"daisyui@npm:^1.6.0":
+  version: 1.6.0
+  resolution: "daisyui@npm:1.6.0"
+  checksum: 5a8df7e7f5a0e653ae1547aad9488b399532d667035a36d32e635ed692c3c76a88cf2712d22056daa7b4e936c84dea33b0ad41873a0acbebcb9ff20ea9c302f0
   languageName: node
   linkType: hard
 
@@ -6896,13 +6896,13 @@ __metadata:
     "@fortawesome/fontawesome-free": ^5.15.3
     "@picgo/bump-version": ^1.1.0
     "@squoosh/lib": ^0.3.1
-    "@vitejs/plugin-legacy": ^1.4.2
-    alpinejs: ^3.1.1
+    "@vitejs/plugin-legacy": ^1.4.3
+    alpinejs: ^3.2.1
     autoprefixer: ^10.2.6
     concurrently: ^6.2.0
     cross-env: ^7.0.3
     cssnano: ^5.0.6
-    daisyui: ^1.4.0
+    daisyui: ^1.6.0
     eleventy-plugin-blog-tools: ^0.3.1
     eleventy-plugin-lazyimages: ^2.1.0
     eleventy-plugin-reader-bar: ^0.2.0
@@ -6919,7 +6919,7 @@ __metadata:
     html-minifier: ^4.0.0
     husky: ^6.0.0
     lighthouse: ^8.0.0
-    markdown-it-anchor: ^8.0.3
+    markdown-it-anchor: ^8.0.4
     markdown-it-attrs: ^4.0.0
     markdown-it-emoji: ^2.0.0
     moment: ^2.29.1
@@ -6927,7 +6927,7 @@ __metadata:
     overlayscrollbars: ^1.13.1
     postcss: ^8.3.5
     postcss-preset-env: ^6.7.0
-    prettier: 2.3.1
+    prettier: ^2.3.2
     psi: ^4.1.0
     reveal.js: ^4.1.3
     rimraf: ^3.0.2
@@ -9943,12 +9943,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdown-it-anchor@npm:^8.0.3":
-  version: 8.0.3
-  resolution: "markdown-it-anchor@npm:8.0.3"
+"markdown-it-anchor@npm:^8.0.4":
+  version: 8.0.4
+  resolution: "markdown-it-anchor@npm:8.0.4"
   peerDependencies:
     markdown-it: "*"
-  checksum: 649c28d1ffb5aafb125dfb46c2ba7e0b1535bbcee729065eab4a809e87bc59f3b93e66139d638b38ea97b4fa8804a9bd5a366c71ebc7fd7549d666d16640df5b
+  checksum: 288ac24a5d4bbfff268b103761a7bbc33086f687704bc29da26bf11866c4981b38d7d7119e7a8425d8e70ca67f7a75f38436c4e792178971dd659996793057ce
   languageName: node
   linkType: hard
 
@@ -12586,12 +12586,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.3.1":
-  version: 2.3.1
-  resolution: "prettier@npm:2.3.1"
+"prettier@npm:^2.3.2":
+  version: 2.3.2
+  resolution: "prettier@npm:2.3.2"
   bin:
     prettier: bin-prettier.js
-  checksum: 9b4a695b87ce5f510fc20feec01cce7371f0fa0b92ffe79d543f6be52e2004c532861629de4d7ab1c577e1f649dce3cfccd62cb2ca6526b1da8d9c63eb84bf36
+  checksum: 4fd89a7f6a12b13456d359fba2b1dd0fc0a17cf33f8f15953ab9f43b21ea9b09b5a2861d63b558ca0577274ce606d390e70628cf93e26d19d6cb7f19c9eebc31
   languageName: node
   linkType: hard
 
