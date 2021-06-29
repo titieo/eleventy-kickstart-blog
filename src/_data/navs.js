@@ -4,11 +4,11 @@ module.exports = [
         content: 'Posts',
         icon: 'fas fa-blog',
     },
-    {
-        link: '/content/slides/',
-        content: 'Slides',
-        icon: 'fab fa-slideshare',
-    },
+    // {
+    //     link: '/content/slides/',
+    //     content: 'Slides',
+    //     icon: 'fab fa-slideshare',
+    // },
     {
         link: '/tags/',
         content: 'Tags',

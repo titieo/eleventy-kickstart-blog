@@ -151,12 +151,12 @@ module.exports = function (eleventyConfig) {
 
         return entryChunk;
     }
-    eleventyConfig.addLayoutAlias('slide', 'layouts/slide.njk');
+    // eleventyConfig.addLayoutAlias('slide', 'layouts/slide.njk');
     eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
     eleventyConfig.addLayoutAlias('home', 'layouts/home.njk');
-    eleventyConfig.addCollection('allSlides', function (collectionApi) {
-        return collectionApi.getFilteredByGlob('./src/content/slides/**/*.md');
-    });
+    // eleventyConfig.addCollection('allSlides', function (collectionApi) {
+    //     return collectionApi.getFilteredByGlob('./src/content/slides/**/*.md');
+    // });
     eleventyConfig.addFilter('filterTagList', (tags) => {
         // should match the list in tags.njk
         return (tags || []).filter(
