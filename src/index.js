@@ -1,4 +1,5 @@
 import './styles/index.css';
+import 'vite/dynamic-import-polyfill';
 // import 'overlayscrollbars/js/OverlayScrollbars.min.js';
 import '@fortawesome/fontawesome-free/js/all';
 // Import Packages

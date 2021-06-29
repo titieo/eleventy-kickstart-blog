@@ -104,6 +104,7 @@ Production-ready in mind:
 -   ✅ Cache busting
 -   💯 Maximize lighthouse score
 -   🌈 Include a FREE minimalist blog theme
+-   ✨ Commit message with icon using [bump-version](https://github.com/PicGo/bump-version)
 <!-- -   🗒 Netlify CMS (optional) -->
 
 ## Getting Started
@@ -173,7 +174,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-loctran016 - [@loctran016](https://twitter.com/loctran016) - loctran016@icloud.com
+Loctran016 - [@loctran016](https://twitter.com/loctran016) - loctran016@icloud.com
 
 Project Link:
 [https://github.com/loctran016/eleventy-kickstart-blog](https://github.com/loctran016/eleventy-kickstart-blog)
@@ -185,8 +186,9 @@ Project Link:
 -   [Best Readme Template](https://github.com/othneildrew/Best-README-Template)
 -   [Eleventy Starter Boilerplate](https://github.com/ixartz/Eleventy-Starter-Boilerplate)
     (some code here is come from this repo)
-    <!-- MARKDOWN LINKS & IMAGES -->
-    <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+-   [eleventy-with-vite](https://github.com/fpapado/eleventy-with-vite) (thanks to this project, I can add vite)
+     <!-- MARKDOWN LINKS & IMAGES -->
+     <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/loctran016/eleventy-kickstart-blog.svg?style=for-the-badge
 [contributors-url]: https://github.com/loctran016/eleventy-kickstart-blog/graphs/contributors
