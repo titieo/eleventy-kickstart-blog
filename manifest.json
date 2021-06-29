@@ -1,32 +1,32 @@
 {
   "src/index-legacy.js": {
-    "file": "assets/index-legacy.7d28fa0b.js",
+    "file": "assets/index-legacy.9efeb94a.js",
     "src": "src/index-legacy.js",
     "isEntry": true,
     "imports": [
-      "_vendor-legacy.9e757c9d.js"
+      "_vendor-legacy.32fea3d8.js"
     ]
   },
-  "_vendor-legacy.9e757c9d.js": {
-    "file": "assets/vendor-legacy.9e757c9d.js"
+  "_vendor-legacy.32fea3d8.js": {
+    "file": "assets/vendor-legacy.32fea3d8.js"
   },
   "vite/legacy-polyfills": {
-    "file": "assets/polyfills-legacy.b9b0e990.js",
+    "file": "assets/polyfills-legacy.57dc8e49.js",
     "src": "vite/legacy-polyfills",
     "isEntry": true
   },
   "src/index.js": {
-    "file": "assets/index.78fd6508.js",
+    "file": "assets/index.aeabd7e0.js",
     "src": "src/index.js",
     "isEntry": true,
     "imports": [
-      "_vendor.9243a557.js"
+      "_vendor.fecf9efa.js"
     ],
     "css": [
-      "assets/index.e950c414.css"
+      "assets/index.05a56886.css"
     ]
   },
-  "_vendor.9243a557.js": {
-    "file": "assets/vendor.9243a557.js"
+  "_vendor.fecf9efa.js": {
+    "file": "assets/vendor.fecf9efa.js"
   }
 }
