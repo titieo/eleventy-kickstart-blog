@@ -54,7 +54,7 @@
                         {{ post.data.author }} &bull;
                         <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
                     </p>
-                    <a class="mt-2 btn" href="{{ post.url | url }}"
+                    <a class="mt-2 btn" href="{{ post.url | url }}" title="{{ post.data.title }}"
                         >Read More</a
                     >
                     {% for tag in post.data.tags | filterTagList %} {% set
