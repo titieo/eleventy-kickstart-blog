@@ -62,7 +62,7 @@
         "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1",
         "@fortawesome/fontawesome-free": "^5.15.3",
         "@squoosh/lib": "^0.3.1",
-        "@vitejs/plugin-legacy": "^1.4.3",
+        "@vitejs/plugin-legacy": "^1.6.4",
         "alpinejs": "^3.2.1",
         "daisyui": "^1.6.0",
         "eleventy-plugin-blog-tools": "^0.3.1",
