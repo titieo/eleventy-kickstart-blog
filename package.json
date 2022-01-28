@@ -59,7 +59,7 @@
     "dependencies": {
         "@11ty/eleventy-navigation": "^0.3.2",
         "@11ty/eleventy-plugin-rss": "^1.1.1",
-        "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1",
+        "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
         "@fortawesome/fontawesome-free": "^5.15.3",
         "@squoosh/lib": "^0.3.1",
         "@vitejs/plugin-legacy": "^1.4.3",
