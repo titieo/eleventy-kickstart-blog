@@ -115,6 +115,6 @@
         "stylelint-config-standard": "22.0.0",
         "tailwindcss": "^2.2.4",
         "tree-node-cli": "^1.4.0",
-        "vite": "^2.3.8"
+        "vite": "^2.8.2"
     }
 }
