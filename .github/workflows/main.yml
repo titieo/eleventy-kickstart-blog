@@ -10,7 +10,7 @@ jobs:
         name: Build and Deploy
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/setup-node@v2
+            - uses: actions/setup-node@v3
               with:
                   node-version: '14'
             - name: Checkout Repository
@@ -41,7 +41,7 @@ jobs:
         name: Lint
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/setup-node@v2
+            - uses: actions/setup-node@v3
               with:
                   node-version: '14'
             - name: Checkout Repository
