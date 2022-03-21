@@ -97,7 +97,7 @@
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-promise": "^5.1.0",
         "favicons": "^6.2.2",
-        "format-package": "^6.1.0",
+        "format-package": "^7.0.0",
         "glob": "^7.1.7",
         "html-minifier": "^4.0.0",
         "husky": "^6.0.0",
