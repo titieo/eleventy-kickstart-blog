@@ -64,7 +64,7 @@
         "@squoosh/lib": "^0.3.1",
         "@vitejs/plugin-legacy": "^1.4.3",
         "alpinejs": "^3.2.1",
-        "daisyui": "^1.6.0",
+        "daisyui": "^2.13.0",
         "eleventy-plugin-blog-tools": "^0.3.1",
         "eleventy-plugin-reader-bar": "^0.2.0",
         "markdown-it-anchor": "^8.0.4",
