@@ -69,7 +69,7 @@
         "eleventy-plugin-reader-bar": "^0.2.0",
         "markdown-it-anchor": "^8.0.4",
         "markdown-it-attrs": "^4.0.0",
-        "markdown-it-emoji": "^2.0.0",
+        "markdown-it-emoji": "^2.0.2",
         "overlayscrollbars": "^1.13.1",
         "reveal.js": "^4.1.3",
         "theme-change": "^2.0.2",
