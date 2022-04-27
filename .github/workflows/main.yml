@@ -32,7 +32,7 @@ jobs:
           # no urls needed, since it uses local folder to scan .html files
                 configPath: './lighthouserc.json'
             - name: Deploy
-              uses: JamesIves/github-pages-deploy-action@4.1.4
+              uses: JamesIves/github-pages-deploy-action@v4.3.3
               if: ${{ github.event_name == 'push'}}
               with:
                   branch: result
