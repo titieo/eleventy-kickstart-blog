@@ -66,7 +66,7 @@
         "alpinejs": "^3.2.1",
         "daisyui": "^1.6.0",
         "eleventy-plugin-blog-tools": "^0.3.1",
-        "eleventy-plugin-reader-bar": "^0.2.0",
+        "eleventy-plugin-reader-bar": "^0.2.1",
         "markdown-it-anchor": "^8.0.4",
         "markdown-it-attrs": "^4.0.0",
         "markdown-it-emoji": "^2.0.0",
